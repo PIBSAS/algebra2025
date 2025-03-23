@@ -4,23 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Libro 5 - Algebra y Geometría Analítica</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        h1, h2 {
-            color: #2c3e50;
-        }
-        section {
-            margin-bottom: 20px;
-        }
-        .content {
-            padding: 10px;
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -44,54 +27,70 @@
 
     <section id="introduccion">
         <h2>1. Introducción</h2>
-        <div class="content">
-            <p>Venimos trabajando con transformaciones lineales. Lo último que estuvimos planteando fue hallar la matriz de una transformación lineal de Rn en Rm conocidos n vectores y sus transformados. En este tema, trabajaremos únicamente con transformaciones lineales de Rn en Rn.</p>
-            <p>Para introducir el tema, vamos a resolver dos ejemplos como los que mencionamos anteriormente, pero con una particularidad en los datos.</p>
-            <p>En el siguiente video, el profesor Martín Ch. halla la matriz de una transformación lineal de R3 en R3...</p>
-        </div>
+        <p>Venimos trabajando con transformaciones lineales. Lo último que estuvimos planteando fue hallar la matriz de una transformación lineal de Rn en Rm conocidos n vectores y sus transformados. En este tema, trabajaremos únicamente con transformaciones lineales de Rn en Rn. Es decir, transformaciones lineales que relacionan vectores de un espacio vectorial con vectores del mismo espacio vectorial.</p>
+        <p>Para introducir el tema que vamos a estar abordando estas dos semanas, vamos a resolver dos ejemplos como los que mencionamos en el párrafo anterior, pero los datos tienen una particularidad.</p>
+        <p>En el siguiente video el profesor Martín Ch. halla la matriz de una transformación lineal de R3 en R3 a partir de conocer 3 vectores que forman un conjunto linealmente independiente y los transformados de estos 3 vectores. Los vectores dados tienen la particularidad de que se transforman en múltiplos escalares de sí mismos.</p>
+        <p><a href="#">Video con un ejemplo introductorio 1 - UNMTube</a></p>
+        <p><a href="#">Video con un ejemplo introductorio 1 - YouTube</a></p>
+        <p>En el ejemplo del video anterior, la matriz de la transformación lineal se consigue haciendo la multiplicación:</p>
+        <p><code>⎛⎝⎜102−2−1125−1⎞⎠⎟⋅⎛⎝⎜10001000−1⎞⎠⎟⋅⎛⎝⎜102−2−1125−1⎞⎠⎟−1</code></p>
+        <p>Les dejamos la cuenta para ustedes.</p>
+        <p>En el siguiente video, trabajamos con un ejemplo similar al video anterior, pero en este caso, lo hacemos con una transformación lineal de R2 en R2.</p>
+        <p><a href="#">Video con un ejemplo introductorio 2 - UNMTube</a></p>
+        <p><a href="#">Video con un ejemplo introductorio 2 - YouTube</a></p>
     </section>
 
     <section id="autovector">
         <h2>2. Definición de autovector y de autovalor</h2>
-        <div class="content">
-            <p>A partir de los ejemplos anteriores, cobran sentido las definiciones de autovalor y autovector. En el siguiente video, el profesor Gastón presenta la definición de autovector y autovalor...</p>
-        </div>
+        <p>A partir de los ejemplos anteriores, y de lo particular que resultó la manera en la que quedó la forma de hallar la matriz de una transformación lineal, cobran sentido las definiciones de autovalor y autovector que el profesor Gastón presenta en el siguiente video.</p>
+        <p><a href="#">Video con una definición de autovector y autovalor de una TL - UNMTube</a></p>
+        <p><a href="#">Video con una definición de autovector y autovalor de una TL - YouTube</a></p>
+        <p>En el siguiente video, el profesor Gastón nos muestra algunos ejemplos conceptuales de autovalores y autovectores asociados a distintas transformaciones lineales.</p>
+        <p><a href="#">Video con ejemplos de autovectores y autovalores - UNMTube</a></p>
+        <p><a href="#">Video con ejemplos de autovectores y autovalores - YouTube</a></p>
     </section>
 
     <section id="propiedad">
         <h2>3. Una primera propiedad de los autovectores</h2>
-        <div class="content">
-            <p>Dada una transformación lineal T de Rn en Rn, si el vector v es un autovector de T de autovalor asociado λ, entonces, cada vector de la recta X=αv es también autovector de T de autovalor λ...</p>
-        </div>
+        <p>Dada una transformación lineal T de Rn en Rn, si el vector v⃗ es un autovector de la transformación T de autovalor asociado λ, entonces, cada vector de la recta X=αv⃗ es también autovector de T de autovalor λ.</p>
+        <p>Por ejemplo, en la transformación lineal del ejemplo del segundo video, resulta que el vector (−14) es autovector de la transformación lineal que allí se trabaja, asociado al autovalor 2 pues se transforma en el vector (−28). Según la propiedad que enunciamos en el párrafo anterior, entonces, sucede que cualquier múltiplo del (−14) es autovector de la transformación. Por ejemplo, el vector (10−20).</p>
     </section>
 
     <section id="hallar">
         <h2>4. ¿Cómo hallamos los autovalores y autovectores conocida la matriz de la transformación lineal?</h2>
-        <div class="content">
-            <p>En el siguiente video, el profesor Marcelo da una explicación teórica sobre cómo hallar autovectores y autovalores conocida la matriz...</p>
-        </div>
+        <p>En el siguiente video, el profesor Marcelo da una explicación teórica que responde a la pregunta del título de esta parte.</p>
+        <p><a href="#">Video con el desarrollo teórico de cómo hallar autovectores y autovalores - UNMTube</a></p>
+        <p><a href="#">Video con el desarrollo teórico de cómo hallar autovectores y autovalores - YouTube</a></p>
+        <p>Los siguientes dos videos corresponden a la parte 1 y a la parte 2, respectivamente, de ejemplos en el que el profesor Marcelo halla los autovectores y los autovalores de una matriz.</p>
+        <p><a href="#">Parte 1 - Video con un ejemplo de cómo hallar autovalores y autovectores - UNMTube</a></p>
+        <p><a href="#">Parte 1 - Video con un ejemplo de cómo hallar autovalores y autovectores - YouTube</a></p>
+        <p><a href="#">Parte 2 - Video con un ejemplo de cómo hallar autovalores y autovectores - UNMTube</a></p>
+        <p><a href="#">Parte 2 - Video con un ejemplo de cómo hallar autovalores y autovectores - YouTube</a></p>
     </section>
 
     <section id="diagonalizacion">
         <h2>5. Diagonalización</h2>
-        <div class="content">
-            <p>En este video, el profesor Daniel explica la diagonalización de matrices, un concepto fundamental relacionado con la potencia de matrices...</p>
-        </div>
+        <p>Volvemos a los videos del comienzo de este tema. En el video que aparece más abajo, le damos forma a lo que planteamos en los dos videos iniciales.</p>
+        <p>Previamente, queremos revisar un asunto. Nosotros trabajamos con independencia lineal de vectores. Mencionamos en algún libro anterior que un conjunto de vectores es linealmente independiente si cada uno de los vectores no puede expresarse como combinación lineal de los otros. O de otra manera, un conjunto es linealmente independiente, si el vector nulo, únicamente se consigue como combinación lineal de los vectores del conjunto con escalares todos 0.</p>
+        <p>También habíamos mencionado que con n vectores de Rn que formen un conjunto linealmente independiente logramos conseguirnos todos los vectores de Rn, en el sentido de que, cualquier vector de Rn es combinación lineal de esos n vectores. Bien, recordemos que a ese conjunto de n vectores de Rn que forman un conjunto linealmente independiente lo llamamos base del espacio vectorial Rn. Esto es así pues la base genera al espacio vectorial y, además, es el conjunto con la menor cantidad de vectores que lo hace.</p>
+        <p>En el siguiente video, el profesor Daniel trabaja con la noción de diagonalización de matrices. Este concepto retoma lo que planteamos en la resolución de los problemas del comienzo. Además, de todas las aplicaciones que tiene, elegimos ahora contar una relacionada con la potencia de matrices.</p>
+        <p><a href="#">Video sobre diagonalización - UNMTube</a></p>
+        <p><a href="#">Video sobre diagonalización - YouTube</a></p>
     </section>
 
     <section id="propiedades">
         <h2>6. Propiedades de las matrices diagonalizables</h2>
-        <div class="content">
-            <p>Una matriz A∈Rn×n es diagonalizable, si y solo si, A tiene n autovectores que forman un conjunto linealmente independiente...</p>
-        </div>
+        <p>De las propiedades que ya se mencionaron, extraemos una de ellas como ejemplo. Consideremos una matriz A que sea diagonalizable.</p>
+        <p>Si tenemos que la matriz A es diagonalizable, entonces:</p>
+        <ul>
+            <li>Los autovectores correspondientes a distintos autovalores son linealmente independientes.</li>
+            <li>Si la matriz A es diagonalizable, entonces existe una base de Rn compuesta por autovectores de A.</li>
+        </ul>
     </section>
 
     <section id="ejercicios">
         <h2>7. Ejercitación y Autoevaluación</h2>
-        <div class="content">
-            <p><strong>Ejercitación:</strong> Para ejercitación sobre el tema, tienen el listado de ejercicios y problemas sobre autovectores, autovalores y diagonalización...</p>
-            <p><strong>Autoevaluación:</strong> Durante la segunda semana tendrán habilitada la autoevaluación sobre estos temas.</p>
-        </div>
+        <p>Para autoevaluarse, les proponemos los siguientes ejercicios. Completen las soluciones en la forma que prefieran, escribiendo sus respuestas en papel o en documentos de texto y enviándolos por correo electrónico al profesor a la dirección <a href="mailto:profesor@domain.com">profesor@domain.com</a>.</p>
     </section>
 </body>
 </html>
