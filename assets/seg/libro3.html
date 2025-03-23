@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Libro 3 - Transformaciones entre vectores</title>
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
     <header>
@@ -29,90 +30,90 @@
     </nav>
 
     <main>
-    <section id="introduccion">
-        <h2>1. Introducción</h2>
-        <p>Comenzamos a trabajar con la unidad 5. En esta unidad veremos un tipo de función especial. En estas funciones relacionaremos vectores de un espacio vectorial con vectores de otro espacio vectorial (que podría ser el mismo). Y dentro de estas funciones entre espacios vectoriales, que llamaremos transformaciones, en el siguiente libro veremos unas transformaciones que tienen unas características muy particulares.</p>
-        <p>En este primer libro, trabajaremos con transformaciones entre vectores en general y algunas transformaciones específicas.</p>
-    </section>
-
-    <section id="transformaciones">
-        <h2>2. Transformaciones entre vectores</h2>
-        <p>A lo largo de esta unidad trabajaremos con funciones que asignan a cada vector de un espacio vectorial un único vector de otro espacio vectorial.</p>
-        <p>Por ejemplo, supongamos que tenemos todos los vectores de R² y a cada vector (x, y) le asignamos el vector que resulta de sumarle el vector (1, 2). De esta manera, por ejemplo, al vector (-2, 3) le corresponde el vector (-1, 5) y al vector (2, -1) le corresponde el vector (3, 1).</p>
-        <p>Llamaremos Transformaciones a estas funciones que relacionan vectores. Usaremos la letra T para referirnos a una transformación concreta (pueden ser otras letras mayúsculas, y/o contener un subíndice).</p>
-        <p>Además, llamaremos dominio al conjunto al que pertenecen los vectores “iniciales” y codominio al conjunto al que pertenecen los vectores que asignamos a cada vector del dominio.</p>
-        <p>Por ejemplo, si llamamos T a la transformación del ejemplo anterior, entonces, escribiremos T: R² → R². Esto significa que tenemos la transformación T en la que a cada vector del espacio vectorial R² (Dominio de T) se le asigna un único vector del espacio vectorial R² (Codominio de T).</p>
-    </section>
-
-    <section id="representaciones">
-        <h2>3. Distintas formas de representación</h2>
-        <p>La forma que tenemos de acceder a los objetos matemáticos es a través de sus representaciones. Por ejemplo, si ahora estuvieras sentado en una silla, el objeto que está debajo tuyo tiene unas características particulares y una utilidad especial. La foto de tu silla, o el dibujo de tu silla o la palabra silla, o una descripción del objeto, no son el objeto. En este caso podemos tener el objeto y las diferentes formas de representarlo.</p>
-        <p>En el caso de los objetos matemáticos, tenemos su definición, las propiedades que podamos justificar. Y accedemos a través de alguna forma de representarlo.</p>
-        <p>En lo que sigue, les contamos diferentes maneras de representar una transformación.</p>
-        
-        <section id="coloquial">
-            <h3>3.1. En forma coloquial</h3>
-            <p>Una forma de definir una transformación entre vectores en forma coloquial es como en el ejemplo anterior.</p>
-            <p>Por ejemplo, definimos la transformación T que a cada vector (x, y) de R² le asigna el vector que resulta de sumarlo con el vector (1, 2).</p>
+        <section id="introduccion">
+            <h2>1. Introducción</h2>
+            <p>Comenzamos a trabajar con la unidad 5. En esta unidad veremos un tipo de función especial. En estas funciones relacionaremos vectores de un espacio vectorial con vectores de otro espacio vectorial (que podría ser el mismo). Y dentro de estas funciones entre espacios vectoriales, que llamaremos transformaciones, en el siguiente libro veremos unas transformaciones que tienen unas características muy particulares.</p>
+            <p>En este primer libro, trabajaremos con transformaciones entre vectores en general y algunas transformaciones específicas.</p>
         </section>
-
-        <section id="formula">
-            <h3>3.2. Mediante fórmula para evaluar</h3>
-            <p>Siguiendo con el mismo ejemplo, una manera de definir la misma transformación puede ser la siguiente:</p>
-            <p>T: R² → R²; T(x, y) = (x + 1, y + 2)</p>
-            <p>Llamaremos imagen del vector (x, y) al vector que le corresponde al vector (x, y). Lo denotaremos con T(x, y). Es decir, T(x, y) significa la imagen del vector (x, y) según la transformación T.</p>
-            <p>Así, la imagen de (3, 4) según T es (4, 6). En símbolos, T(3, 4) = (4, 6). Estos símbolos se leen como la oración anterior.</p>
+    
+        <section id="transformaciones">
+            <h2>2. Transformaciones entre vectores</h2>
+            <p>A lo largo de esta unidad trabajaremos con funciones que asignan a cada vector de un espacio vectorial un único vector de otro espacio vectorial.</p>
+            <p>Por ejemplo, supongamos que tenemos todos los vectores de R² y a cada vector (x, y) le asignamos el vector que resulta de sumarle el vector (1, 2). De esta manera, por ejemplo, al vector (-2, 3) le corresponde el vector (-1, 5) y al vector (2, -1) le corresponde el vector (3, 1).</p>
+            <p>Llamaremos Transformaciones a estas funciones que relacionan vectores. Usaremos la letra T para referirnos a una transformación concreta (pueden ser otras letras mayúsculas, y/o contener un subíndice).</p>
+            <p>Además, llamaremos dominio al conjunto al que pertenecen los vectores “iniciales” y codominio al conjunto al que pertenecen los vectores que asignamos a cada vector del dominio.</p>
+            <p>Por ejemplo, si llamamos T a la transformación del ejemplo anterior, entonces, escribiremos T: R² → R². Esto significa que tenemos la transformación T en la que a cada vector del espacio vectorial R² (Dominio de T) se le asigna un único vector del espacio vectorial R² (Codominio de T).</p>
         </section>
-
-        <section id="matrices">
-            <h3>3.3. Usando matrices</h3>
-            <p>En algunos casos es posible expresar la relación con matrices y/o vectores.</p>
-            <p>Por ejemplo, en el caso que venimos trabajando, podemos escribir la relación entre los vectores del dominio y lo de la imagen de la siguiente manera:</p>
-            <p>T: R² → R²; T(x, y) = (x, y) + (1, 2)</p>
-            <p>Algunos ejemplos de transformaciones definidas usando matrices son:</p>
+    
+        <section id="representaciones">
+            <h2>3. Distintas formas de representación</h2>
+            <p>La forma que tenemos de acceder a los objetos matemáticos es a través de sus representaciones. Por ejemplo, si ahora estuvieras sentado en una silla, el objeto que está debajo tuyo tiene unas características particulares y una utilidad especial. La foto de tu silla, o el dibujo de tu silla o la palabra silla, o una descripción del objeto, no son el objeto. En este caso podemos tener el objeto y las diferentes formas de representarlo.</p>
+            <p>En el caso de los objetos matemáticos, tenemos su definición, las propiedades que podamos justificar. Y accedemos a través de alguna forma de representarlo.</p>
+            <p>En lo que sigue, les contamos diferentes maneras de representar una transformación.</p>
+            
+            <section id="coloquial">
+                <h3>3.1. En forma coloquial</h3>
+                <p>Una forma de definir una transformación entre vectores en forma coloquial es como en el ejemplo anterior.</p>
+                <p>Por ejemplo, definimos la transformación T que a cada vector (x, y) de R² le asigna el vector que resulta de sumarlo con el vector (1, 2).</p>
+            </section>
+    
+            <section id="formula">
+                <h3>3.2. Mediante fórmula para evaluar</h3>
+                <p>Siguiendo con el mismo ejemplo, una manera de definir la misma transformación puede ser la siguiente:</p>
+                <p>T: R² → R²; T(x, y) = (x + 1, y + 2)</p>
+                <p>Llamaremos imagen del vector (x, y) al vector que le corresponde al vector (x, y). Lo denotaremos con T(x, y). Es decir, T(x, y) significa la imagen del vector (x, y) según la transformación T.</p>
+                <p>Así, la imagen de (3, 4) según T es (4, 6). En símbolos, T(3, 4) = (4, 6). Estos símbolos se leen como la oración anterior.</p>
+            </section>
+    
+            <section id="matrices">
+                <h3>3.3. Usando matrices</h3>
+                <p>En algunos casos es posible expresar la relación con matrices y/o vectores.</p>
+                <p>Por ejemplo, en el caso que venimos trabajando, podemos escribir la relación entre los vectores del dominio y lo de la imagen de la siguiente manera:</p>
+                <p>T: R² → R²; T(x, y) = (x, y) + (1, 2)</p>
+                <p>Algunos ejemplos de transformaciones definidas usando matrices son:</p>
+                <ul>
+                    <li>S: R³ → R³; S([x, y, z]) = [[7, 9, 4], [9, 4, 9], [19, -8, 4]] ⋅ [x, y, z]</li>
+                    <li>R: R³ → R²; R([x, y, z]) = (1, -1, 0) ⋅ [x, y, z]</li>
+                    <li>Q: R³ → R²; Q([x, y, z]) = [[1, 1, 1], [0, 1, -1]] ⋅ [x, y, z] + [3, -3]</li>
+                </ul>
+            </section>
+        </section>
+    
+        <section id="preimagen">
+            <h2>4. ¿Cómo hallamos una preimagen?</h2>
+            <p>Si tenemos una transformación P de cierto dominio, llamémoslo V, y cierto codomio W, y tomamos un vector Y del codomio W y queremos saber si hay algún vector X del dominio V cuyo transformado sea Y, ¿cómo hacemos?</p>
+            <p>Lo que estamos buscando es una preimagen de Y, si es que existe.</p>
+            <p>Pensémoslo en un ejemplo, tomemos la transformación Q anterior y veamos si existe alguna preimagen del vector (10). Es decir, buscamos, si existe, algún vector [x, y, z] de R³ tal que su transformado sea (10), o sea Q([x, y, z]) = (10).</p>
+        </section>
+    
+        <section id="resumen">
+            <h2>5. Resumen hasta aquí</h2>
             <ul>
-                <li>S: R³ → R³; S([x, y, z]) = [[7, 9, 4], [9, 4, 9], [19, -8, 4]] ⋅ [x, y, z]</li>
-                <li>R: R³ → R²; R([x, y, z]) = (1, -1, 0) ⋅ [x, y, z]</li>
-                <li>Q: R³ → R²; Q([x, y, z]) = [[1, 1, 1], [0, 1, -1]] ⋅ [x, y, z] + [3, -3]</li>
+                <li>Transformación</li>
+                <li>Dominio</li>
+                <li>Codominio</li>
+                <li>Ley de correspondencia</li>
+                <li>Imagen de un vector</li>
+                <li>Preimagen de un vector</li>
+                <li>Formas de representar una transformación</li>
+                <li>Espacios vectoriales</li>
             </ul>
         </section>
-    </section>
-
-    <section id="preimagen">
-        <h2>4. ¿Cómo hallamos una preimagen?</h2>
-        <p>Si tenemos una transformación P de cierto dominio, llamémoslo V, y cierto codomio W, y tomamos un vector Y del codomio W y queremos saber si hay algún vector X del dominio V cuyo transformado sea Y, ¿cómo hacemos?</p>
-        <p>Lo que estamos buscando es una preimagen de Y, si es que existe.</p>
-        <p>Pensémoslo en un ejemplo, tomemos la transformación Q anterior y veamos si existe alguna preimagen del vector (10). Es decir, buscamos, si existe, algún vector [x, y, z] de R³ tal que su transformado sea (10), o sea Q([x, y, z]) = (10).</p>
-    </section>
-
-    <section id="resumen">
-        <h2>5. Resumen hasta aquí</h2>
-        <ul>
-            <li>Transformación</li>
-            <li>Dominio</li>
-            <li>Codominio</li>
-            <li>Ley de correspondencia</li>
-            <li>Imagen de un vector</li>
-            <li>Preimagen de un vector</li>
-            <li>Formas de representar una transformación</li>
-            <li>Espacios vectoriales</li>
-        </ul>
-    </section>
-
-    <section id="transformaciones_especiales">
-        <h2>6. Algunas transformaciones especiales</h2>
-        <p>Las transformaciones nos permiten, en particular, pensar ciertas transformaciones geométricas. Por ejemplo, las simetrías o las rotaciones.</p>
-        <p>En el siguiente video el profesor Martín T. introduce la simetría axial en el plano.</p>
-        <p>Video con una explicación sobre la transformación SIMETRÍA - UNMTube</p>
-        <p>Video con una explicación sobre la transformación SIMETRÍA - YouTube</p>
-    </section>
-
-    <section id="ejercitacion">
-        <h2>7. Ejercitación y autoevaluación</h2>
-        <p>Les proponemos que realicen los siguientes ejercicios y problemas.</p>
-        <p>Listado de actividades para realizar sobre transformaciones</p>
-        <p>Como parte de la evaluación continua les proponemos la Autoevaluación sobre transformaciones.</p>
-    </section>
+    
+        <section id="transformaciones_especiales">
+            <h2>6. Algunas transformaciones especiales</h2>
+            <p>Las transformaciones nos permiten, en particular, pensar ciertas transformaciones geométricas. Por ejemplo, las simetrías o las rotaciones.</p>
+            <p>En el siguiente video el profesor Martín T. introduce la simetría axial en el plano.</p>
+            <p>Video con una explicación sobre la transformación SIMETRÍA - UNMTube</p>
+            <p>Video con una explicación sobre la transformación SIMETRÍA - YouTube</p>
+        </section>
+    
+        <section id="ejercitacion">
+            <h2>7. Ejercitación y autoevaluación</h2>
+            <p>Les proponemos que realicen los siguientes ejercicios y problemas.</p>
+            <p>Listado de actividades para realizar sobre transformaciones</p>
+            <p>Como parte de la evaluación continua les proponemos la Autoevaluación sobre transformaciones.</p>
+        </section>
     </main>
 </body>
 </html>
