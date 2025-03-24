@@ -23,3 +23,6 @@ ul {
     list-style-position: inside;
 }
 
+ul ul {
+    padding-left: 20px;
+}
