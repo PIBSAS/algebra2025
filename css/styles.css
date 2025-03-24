@@ -18,11 +18,11 @@ button {
 
 ul {
     text-align: left;
-    list-style-position: outside; /* Asegura alineación correcta */
-    padding-left: 20px; /* Mantiene alineación general */
+    list-style-position: outside;
+    padding-left: 20px;
 }
 ul ul {
-    list-style-type: circle; /* Puntos blancos */
-    list-style-position: outside; /* Mantiene alineación natural */
-    margin-left: 20px; /* Desplaza la sublista a la derecha */
+    list-style-type: circle;
+    list-style-position: outside;
+    margin-left: 20px;
 }
