@@ -20,11 +20,21 @@ main {
     text-align: center;
     margin: 0 auto;
 }
+
 ul {
-    
+
     padding-block: 6px;
 }
 
 li {
     text-align: left; /* Fuerza alineación a la izquierda */
 }
+
+h2 {
+    border: 3px solid black;
+    border-radius: 25px;
+    outline: #4CAF50 solid 5px;
+    margin: auto;  
+    padding: 20px;
+    text-align: center;
+  }
