@@ -19,7 +19,7 @@ button {
 ul {
     list-style-type: disc; /* Puntos negros */
     list-style-position: outside; /* Asegura alineación correcta */
-    padding-left: 20px; /* Mantiene alineación general */
+    padding-left: 25px; /* Mantiene alineación general */
 }
 ul ul {
     list-style-type: circle; /* Puntos blancos */
