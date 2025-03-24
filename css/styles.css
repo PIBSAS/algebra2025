@@ -37,4 +37,6 @@ h2 {
     margin: auto;  
     padding: 20px;
     text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+    width: 30%;
   }
