@@ -22,6 +22,6 @@ main {
 }
 
 li {
-    display: block; /* Asegura que los ítems sean bloques */
-    text-align: left; /* Fuerza alineación a la izquierda */
+    display: block;
+    text-align: left;
 }
