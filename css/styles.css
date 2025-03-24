@@ -20,7 +20,10 @@ main {
     text-align: center;
     margin: 0 auto;
 }
+ul {
+    padding-block: 6px;
+}
 
 li {
-    text-align: left;
+    text-align: left; /* Fuerza alineación a la izquierda */
 }
