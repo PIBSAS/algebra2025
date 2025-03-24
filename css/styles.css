@@ -21,14 +21,6 @@ main {
     margin: 0 auto;
 }
 
-ul {
-    padding-left: 20px;
-}
-
-ul ul {
-    margin-left: 20px;
-}
-
 li {
     display: block; /* Asegura que los ítems sean bloques */
     text-align: left; /* Fuerza alineación a la izquierda */
