@@ -17,6 +17,7 @@ button {
 }
 
 ul {
+    text-align: left;
     list-style-position: outside; /* Asegura alineación correcta */
     padding-left: 20px; /* Mantiene alineación general */
 }
