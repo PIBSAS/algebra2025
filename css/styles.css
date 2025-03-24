@@ -17,15 +17,12 @@ button {
 }
 
 ul {
-    text-align: left;
-    padding-left: 0;
-    margin-left: 0;
+    list-style-type: disc; /* Puntos negros */
+    list-style-position: outside; /* Asegura alineación correcta */
+    padding-left: 20px; /* Mantiene alineación general */
 }
-
 ul ul {
-    padding-left: 20px; /* Asegura que las listas anidadas se vean correctamente */
-}
-
-li {
-    list-style-position: outside; /* Mantiene la alineación de los números */
+    list-style-type: circle; /* Puntos blancos */
+    list-style-position: outside; /* Mantiene alineación natural */
+    margin-left: 20px; /* Desplaza la sublista a la derecha */
 }
