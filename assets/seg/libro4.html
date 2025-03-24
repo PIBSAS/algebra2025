@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Libro 4 - Algebra y Geometría Analítica</title>
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="../../css/styles.css">
 </head>
 <body>
     <header>
@@ -14,18 +14,18 @@
     <main>
         <section id="contenido">
             <h2>Tabla de Contenidos</h2>
-            <div class="table-of-contents">
+            
                 <ul>
-                    <li>1. Introducción</li>
-                    <li>2. Dos propiedades que definen a las transformaciones lineales</li>
-                    <li>3. Hallando imágenes a partir de las propiedades de una TL</li>
-                    <li>4. Hallando la matriz de una transformación lineal</li>
-                    <li>5. Algunas transformaciones geométricas que son TL</li>
-                    <li>6. Núcleo, Imagen y Teorema de la dimensión</li>
-                    <li> 6.1. Núcleo de T</li>
-                    <li> 6.2. Imagen de T</li>
-                    <li> 6.3. Núcleo e Imagen de una TL son espacios vectoriales</li>
-                    <li>7. Ejercitación y Autoevaluación</li>
+                    <li><a href="#introduccion"></a>1. Introducción</li>
+                    <li><a href="#propiedades"></a>2. Dos propiedades que definen a las transformaciones lineales</li>
+                    <li><a href="#imagenes"></a>3. Hallando imágenes a partir de las propiedades de una TL</li>
+                    <li><a href="#matriz"></a>4. Hallando la matriz de una transformación lineal</li>
+                    <li><a href="#transformaciones"></a>5. Algunas transformaciones geométricas que son TL</li>
+                    <li><a href="#teorema"></a>6. Núcleo, Imagen y Teorema de la dimensión</li>
+                    <li><a href="#nucleo"></a>6.1. Núcleo de T</li>
+                    <li><a href="#imagen"></a>6.2. Imagen de T</li>
+                    <li><a href="#espacios"></a>6.3. Núcleo e Imagen de una TL son espacios vectoriales</li>
+                    <li><a href="#autoevaluacion"></a>7. Ejercitación y Autoevaluación</li>
                 </ul>
             </div>
         </section>
@@ -38,53 +38,67 @@
             <p>De todas las transformaciones posibles, existen algunas que tienen dos propiedades especiales. A lo largo de estas tres semanas, les proponemos trabajar con estas transformaciones.</p>
         </section>
 
-        <section id="temas">
+        <section id="propiedades">
             <h2>2. Dos propiedades que definen a las transformaciones lineales</h2>
             <p>De todas las transformaciones posibles entre vectores de espacios vectoriales, trabajaremos con unas particulares que se llaman transformaciones lineales (TL). Hay dos propiedades especiales que cumplen las transformaciones lineales. El profesor Gastón explica en qué consisten estas propiedades en el siguiente video:</p>
-            <div class="video">
-                <a href="https://www.youtube.com/watch?v=example1" target="_blank">Video con explicación de las propiedades de las transformaciones lineales - YouTube</a>
-            </div>
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=4ZizSal2wNY" target="_blank">Video con explicación de las propiedades de las transformaciones lineales</a>
+                </ul>
             <p>Podemos representar la ley de correspondencia de cualquier transformación lineal de R<sub>n</sub> en R<sub>m</sub> con una matriz de R<sub>n×m</sub>. En el siguiente video el profesor Gastón nos habla de esto.</p>
-            <div class="video">
-                <a href="https://www.youtube.com/watch?v=example2" target="_blank">Video con explicación de uso de matrices para definir transformaciones lineales - UNMTube</a>
-            </div>
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=wf0YBCuSJK0" target="_blank">Video con explicación de uso de matrices para definir transformaciones lineales</a>
+            </ul>
         </section>
 
-        <section class="section">
+        <section id="imagenes">
             <h2>3. Hallando imágenes a partir de las propiedades de una TL</h2>
             <p>En los videos anteriores pudimos ver cómo conseguir el transformado de un vector conociendo los transformados de otros dos. Para ello usamos que el primer vector es combinación de los otros dos, y además, aprovechamos las dos propiedades que definen a las transformaciones lineales. Por ejemplo, si tenemos una transformación lineal T de R<sub>3</sub> en R<sub>2</sub> que le asigna al vector ⎛⎝⎜10−1⎞⎠⎟ el vector (11) y asigna al vector ⎛⎝⎜111⎞⎠⎟ el vector (−10), entonces, ¿qué vector le asigna al vector −2⋅⎛⎝⎜10−1⎞⎠⎟+3⎛⎝⎜111⎞⎠⎟?</p>
-            <p>Bueno, será la misma combinación lineal, pero de los vectores transformados. Es decir, −2⋅(11)+3(−10), que es el vector (−5−2). O sea que el transformado del vector ⎛⎝⎜135⎞⎠⎟ es el vector (−5−2).</p>
-            <div class="video">
-                <a href="https://www.youtube.com/watch?v=example3" target="_blank">Video en el que hallamos el transformado de un vector a partir de una combinación lineal - UNMTube</a>
-            </div>
+            <p>Bueno, será la misma combinación lineal, pero de los vectores transformados. Es decir, −2⋅(11)+3(−10), que es el vector (−5−2). O sea que el transformado del vector [1, 3, 5]es el vector (−5−2).</p>
+            <p>En el siguiente video el profesor Marcelo nos muestra un ejemplo como éste.</p>
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=Ov4Olu-wX1Y" target="_blank">Video en el que hallamos el transformado de un vector a partir de una combinación lineal</a>
+            </ul>
             <p>Entonces, a partir de conocer los transformados de algunos vectores, podemos conocer los transformados de infinitos vectores. ¿Cualquier vector es combinación lineal de otros dados? ¿De cuántos vectores necesitamos conocer sus transformados (por una transformación lineal) para conocer el transformado de todos? En el siguiente video repasamos con el profesor Daniel la noción de combinación lineal, la noción de independencia/dependencia lineal de un conjunto de vectores para ir tras la respuesta de preguntas como las anteriores.</p>
-            <div class="video">
-                <a href="https://www.youtube.com/watch?v=example4" target="_blank">Video con un repaso de combinación lineal e independencia - UNMTube</a>
-            </div>
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=_1V1Di_AXRc" target="_blank">Video con un repaso de combinación lineal e independencia</a>
+            </ul>
+            <p>A partir del video anterior podemos ver que con un conjunto linealmente independiente de n vectores podemos conseguir todos los vectores de R<sub>n</sub>. Es decir, cualquier vector de R<sub>n</sub>es una combinación lineal de los vectores de un conjunto linealmente independiente con n vectores.</p>
+            <p>Por ejemplo, cualquier vecctor de R<sub>3</sub> es una combinación lineal de los vectores [1, 0, 0], [0, 1, 0] y [0, 0, 1]</p>
         </section>
 
-        <section class="section">
+        <section id="matriz">
             <h2>4. Hallando la matriz de una transformación lineal</h2>
             <p>Como vimos en el segundo video, podemos representar una transformación lineal de R<sub>n</sub> en R<sub>m</sub> usando matrices. En el siguiente video el profesor Marcelo nos muestra un camino posible para hallar la matriz de una transformación lineal de R<sub>2</sub> en R<sub>2</sub>. Vamos a trabajar con la misma transformación del tercer video.</p>
-            <div class="video">
-                <a href="https://www.youtube.com/watch?v=example5" target="_blank">Video con ejemplo nro 1 en el que hallamos la matriz de una TL - UNMTube</a>
-            </div>
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=ocqL8BE3Cao" target="_blank">Video con ejemplo nro 1 en el que hallamos la matriz de una TL.</a>
+            </ul>
             <p>A continuación, el profesor Marcelo trabaja con otro ejemplo en el que hallamos la matriz de una transformación lineal de R<sub>3</sub> en R<sub>3</sub> a partir de conocer tres vectores (que forman un conjunto linealmente independiente) y sus transformados.</p>
-            <div class="video">
-                <a href="https://www.youtube.com/watch?v=example6" target="_blank">Video con ejemplo nro 2 en el que hallamos la matriz de una TL - UNMTube</a>
-            </div>
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=hyQEPWgVhKs" target="_blank">Video con ejemplo nro 2 en el que hallamos la matriz de una TL.</a>
+            </ul>
+            <p>En el siguiente video, el profesor Marcelo, busca la matriz de una transformación lineal de R<sub>3</sub> en R<sub>2</sub> a partir de conocer tres vectores (que forman un conjunto linealmente independiente) y sus transformados.</p>
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=886U21VswZU" target="_blank">Video con ejemplo nro 3 en el que hallamos la matriz de una TL.</a>
+            </ul>
         </section>
 
-        <section class="section">
+        <section id="transformaciones">
             <h2>5. Algunas transformaciones geométricas que son TL</h2>
             <p>Hay algunas transformaciones geométricas que son transformaciones lineales. Algunas de ellas son la simetría con respecto a una recta que pasa por el origen de coordenadas en R<sub>2</sub> y en R<sub>3</sub>, la rotación de cualquier ángulo con centro el origen de coordenadas en R<sub>2</sub>, la simetría con respecto a un plano en R<sub>3</sub>, entre otras.</p>
-            <div class="video">
-                <a href="https://www.youtube.com/watch?v=example7" target="_blank">Video sobre algunas transformaciones geométricas que son TL - UNMTube</a>
-            </div>
+            <p>A veces es sencillo conocer algunos transformados. Por ejemplo, si queremos conocer la matriz de simetría respecto del plano pi: 2x + y - z = 0. Podemos primero intentar conocer tres vectores y sus transformados. Por ejemplo, cualquier vector que pertenece al plano se transforma en sí mismo, y cualquier vector perpendicular al plano se transforma en su opuesto. Así que tenemos que, por ejemplo:</p>
+            <p>T[2, 1, -1]=[-2, 1, -1],</p>
+            <p>T[1, 0, 2]=[1, 0, 2] y</p>
+            <p>T[1, 1, 3]=[1, 1, 3]</p>
+            <p>Luego, como tenemos tres vectores de R<sub>3</sub> LI y sus transformados, podemos proceder como en los videos anteriores para hallar la matriz de la transformación.</p>
+            <p>En el siguiente video, retomamos la simetría con el profesor Martín T. En este caso, buscamos con Geogebra el transformado del (10) y del (01)</p>
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=LMTTfje2mjA" target="_blank">Video en el que trabajamos la simetría como TL.</a>
+            </ul>
         </section>
 
-        <section class="section">
+        <section id="teorema">
             <h2>6. Núcleo, Imagen y Teorema de la dimensión</h2>
+            <p>En esta sección abordaremos algunas propiedades de las transformaciones lineales. En particular, veremos que con conocer las imágenes de "algunos" vectores del dominio podremos tener las imágenes de todos los vectores del dominio.</p>
             <p>Finalmente, vamos a estudiar tres conceptos clave para la teoría de las transformaciones lineales:</p>
             <ul>
                 <li>6.1. Núcleo de una transformación lineal</li>
