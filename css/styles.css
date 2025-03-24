@@ -22,13 +22,10 @@ main {
 }
 
 ul {
-    list-style-position: outside;
     padding-left: 20px;
 }
 
 ul ul {
-    list-style-type: circle;
-    list-style-position: outside;
     margin-left: 20px;
 }
 
