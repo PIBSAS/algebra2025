@@ -1,17 +1,5 @@
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f4f4f4;
-}
+const $Consultas = "https://campusvirtual.unm.edu.ar/moodle/mod/forum/view.php?id=365957";
 
-header {
-    background: #333;
-    color: white;
-    padding: 10px 0;
-}
-
-button {
-    padding: 10px;
-    font-size: 16px;
-    cursor: pointer;
-}
+document.querySelectorAll(".con").forEach(link => {
+    link.href = $Consultas;
+});
