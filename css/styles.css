@@ -34,7 +34,9 @@ h2 {
     border: 3px solid black;
     border-radius: 25px;
     outline: #4CAF50 solid 5px;
-    margin: auto;  
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
     padding: 20px;
     text-align: center;
     text-shadow: 2px 2px 4px #000000;
