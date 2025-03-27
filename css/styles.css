@@ -51,6 +51,12 @@ h2 {
     background-size: cover;
 }
 
+.index-page header {
+    background: none; /* Sin fondo */
+    color: black;     /* Texto en negro */
+    padding: 10px 0;  /* Padding */
+}
+
 .index-page .container {
     position: relative;
     width: 100vw;
