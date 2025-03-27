@@ -42,3 +42,50 @@ h2 {
     text-shadow: 2px 2px 4px #000000;
     width: 30%;
   }
+
+.index-page {
+    overflow: hidden;
+    text-align: center;
+    background-color: #f0f0f0;
+    background: url('assets/progreso.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.index-page .container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.index-page .button {
+    position: absolute;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.index-page .button:hover {
+    background-color: #0056b3;
+}
+
+/* Posiciones de los botones en la primera montaña (7 semanas) */
+.index-page #btn1 { left: 1%; top: 60%; }
+.index-page #btn2 { left: 4%; top: 50%; }
+.index-page #btn3 { left: 15%; top: 55%; }
+.index-page #btn4 { left: 20%; top: 45%; }
+.index-page #btn5 { left: 23%; top: 35%; }
+.index-page #btn6 { left: 27%; top: 20%; }
+.index-page #btn7 { left: 40%; top: 7%; }
+
+/* Posiciones de los botones en la segunda montaña (6 semanas) */
+.index-page #btn8 { left: 43%; top: 19%; }
+.index-page #btn9 { left: 46%; top: 28%; }
+.index-page #btn10 { left: 52%; top: 42%; }
+.index-page #btn11 { left: 58%; top: 48%; }
+.index-page #btn12 { left: 70%; top: 60%; }
+.index-page #btn13 { left: 78%; top: 78%; }
