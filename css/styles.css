@@ -47,7 +47,7 @@ h2 {
     overflow: hidden;
     text-align: center;
     background-color: #f0f0f0;
-    background: url('assets/progreso.jpg') no-repeat center;
+    background: url('/assets/progreso.jpg') no-repeat center;
     background-size: cover;
 }
 
