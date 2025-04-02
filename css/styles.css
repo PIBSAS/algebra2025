@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    text-align: left;
+    text-align: center;
     background-color: #f4f4f4;
 }
 
@@ -19,6 +19,10 @@ button {
 main {
     text-align: center;
     margin: 0 auto;
+}
+
+p {
+    text-align: left;
 }
 
 ul {
