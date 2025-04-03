@@ -120,6 +120,18 @@ h2 {
   flex-direction: column;
   width: 70px;
   gap: 4px;
+  text-decoration: none;
+}
+
+.arrow-left .line {
+  display: flex;
+  gap: 4px;
+  flex-direction: row-reverse; /* Invierte la dirección para la flecha izquierda */
+}
+
+.arrow-right .line {
+  display: flex;
+  gap: 4px;
 }
 
 .arrow-right:hover {
