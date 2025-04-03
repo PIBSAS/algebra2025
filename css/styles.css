@@ -126,12 +126,13 @@ h2 {
 .arrow-left .line {
   display: flex;
   gap: 4px;
-  flex-direction: row-reverse; /* Invierte la dirección para la flecha izquierda */
+  justify-content: flex-start;
 }
 
 .arrow-right .line {
   display: flex;
   gap: 4px;
+  justify-content: flex-end;
 }
 
 .arrow-right:hover {
@@ -161,28 +162,14 @@ h2 {
   border-radius: 50%;
 }
 
-.line {
-  display: flex;
-  gap: 4px;
-}
+.arrow-right .two { transform: translateX(10px); }
+.arrow-right .three { transform: translateX(20px); }
+.arrow-right .four { transform: translateX(30px); }
+.arrow-right .five { transform: translateX(20px); }
+.arrow-right .six { transform: translateX(10px); }
 
-.two {
-  transform: translateX(10px);
-}
-
-.three {
-  transform: translateX(20px);
-}
-
-.four {
-  transform: translateX(30px);
-}
-
-.five {
-  transform: translateX(20px);
-}
-
-.six {
-  transform: translateX(10px);
-}
-
+.arrow-left .two { transform: translateX(-10px); }
+.arrow-left .three { transform: translateX(-20px); }
+.arrow-left .four { transform: translateX(-30px); }
+.arrow-left .five { transform: translateX(-20px); }
+.arrow-left .six { transform: translateX(-10px); }
