@@ -189,9 +189,11 @@ h2 {
 .arrow-left .six { transform: translateX(-10px); }
 
 @media (max-width: 600px) {
-  .math-display {
-      font-size: 12px;
-      white-space: normal;
-      word-break: break-word;
+  mjx-container, .katex-display {
+      font-size: 14px; /* Reduce el tamaño en pantallas pequeñas */
+      display: block;
+      text-align: center;
+      line-height: 1.2;
   }
 }
+
