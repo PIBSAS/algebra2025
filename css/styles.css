@@ -188,9 +188,10 @@ h2 {
 .arrow-left .five { transform: translateX(-20px); }
 .arrow-left .six { transform: translateX(-10px); }
 
-.math-display {
-  font-size: min(5vw, 16px);
-  display: block;
-  text-align: center;
-  overflow-x: auto;
+@media (max-width: 600px) {
+  .math-display {
+      font-size: 12px;
+      white-space: normal;
+      word-break: break-word;
+  }
 }
