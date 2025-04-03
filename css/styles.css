@@ -103,6 +103,16 @@ h2 {
 .index-page #btn14 { left: 42%; top: 13%; }
 .index-page #btn15 { left: 88%; top: 74%; }
 
+.redu {
+  border-radius: 15px;
+  width: 50%;
+  height: auto;
+}
+
+.bor {
+  border-radius: 15px;
+}
+
 .footer {
   position: relative;
   margin-top: 40px;

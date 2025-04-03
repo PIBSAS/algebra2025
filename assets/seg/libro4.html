@@ -13,22 +13,25 @@
     </header>
 
     <main>
-        <section id="contenido">
-            <h2>Tabla de Contenidos</h2>
-            
+        <section id="indice">
+            <h2>Tabla de contenidos</h2>
                 <ul>
-                    <li>1. <a href="#introduccion"></a>Introducción</li>
-                    <li>2. <a href="#propiedades"></a>Dos propiedades que definen a las transformaciones lineales</li>
-                    <li>3. <a href="#imagenes"></a>Hallando imágenes a partir de las propiedades de una TL</li>
-                    <li>4. <a href="#matriz"></a>Hallando la matriz de una transformación lineal</li>
-                    <li>5. <a href="#transformaciones"></a>5. Algunas transformaciones geométricas que son TL</li>
-                    <li>6. <a href="#teorema"></a>Núcleo, Imagen y Teorema de la dimensión</li>
-                    <li>6.1 <a href="#nucleo"></a>Núcleo de T</li>
-                    <li>6.2 <a href="#imagen"></a>Imagen de T</li>
-                    <li>6.3 <a href="#espacios"></a>Núcleo e Imagen de una TL son espacios vectoriales</li>
-                    <li>6.4 <a href="#determinar">¿Cómo queda determinada una TL?</a></li>
-                    <li>6.5 <a href="#dimension">Teorema de la dimensión y caracterización de la solución de los sitemas homogéneos</a></li>
-                    <li>7. <a href="#autoevaluacion"></a>Ejercitación y Autoevaluación</li>
+                    <li>1. <a href="#introduccion">Introducción</a></li>
+                    <li>2. <a href="#propiedades">Dos propiedades que definen a las transformaciones lineales</a></li>
+                    <li>3. <a href="#imagenes">Hallando imágenes a partir de las propiedades de una TL</a></li>
+                    <li>4. <a href="#matriz">Hallando la matriz de una transformación lineal</a></li>
+                    <li>5. <a href="#transformaciones">Algunas transformaciones geométricas que son TL</a></li>
+                    <li>
+                        6. <a href="#teorema">Núcleo, Imagen y Teorema de la dimensión</a>
+                        <ul>
+                            <li>6.1 <a href="#nucleo">Núcleo de T</a></li>
+                            <li>6.2 <a href="#imagen">Imagen de T</a></li>
+                            <li>6.3 <a href="#espacios">Núcleo e Imagen de una TL son espacios vectoriales</a></li>
+                            <li>6.4 <a href="#determinar">¿Cómo queda determinada una TL?</a></li>
+                            <li>6.5 <a href="#dimension">Teorema de la dimensión y caracterización de la solución de los sitemas homogéneos</a></li>
+                        </ul>
+                    </li>
+                    <li>7. <a href="#autoevaluacion">Ejercitación y Autoevaluación</a></li>
                 </ul>
         </section>
 
@@ -54,7 +57,7 @@
                     <a href="https://www.youtube.com/watch?v=wf0YBCuSJK0" target="_blank">Video con explicación de uso de matrices para definir transformaciones lineales</a>
                 </li>
             </ul>
-            <img src="../../assets/4_1.gif" alt="Dos propiedades que definen las transformaciones lineales">
+            <img src="../../assets/4_1.gif" alt="Dos propiedades que definen las transformaciones lineales" class="bor">
         </section>
 
         <section id="imagenes">
@@ -71,12 +74,12 @@
             </ul>
             <p>A partir del video anterior podemos ver que con un conjunto linealmente independiente de \( n \) vectores podemos conseguir todos los vectores de \( \mathbb{R}^n \). Es decir, cualquier vector de \( \mathbb{R}^n \) es una combinación lineal de los vectores de un conjunto linealmente independiente con \( n \) vectores.</p>
             <p>Por ejemplo, cualquier vecctor de \( \mathbb{R}^3 \) es una combinación lineal de los vectores \( \begin{pmatrix} 1\\0\\0 \end{pmatrix} \), \( \begin{pmatrix} 0\\ 1\\ 0 \end{pmatrix} \) y \( \begin{pmatrix} 0\\ 0\\ 1 \end{pmatrix} \)</p>
-            <img src="../../assets/4_2.jpg" alt="Rango de una transformación lineal">
+            <img src="../../assets/4_2.jpg" alt="Rango de una transformación lineal" class="bor">
         </section>
 
         <section id="matriz">
             <h2>4. Hallando la matriz de una transformación lineal</h2>
-            <img src="../../assets/4_3.gif" alt="Matriz de una transformación lineal">
+            <img src="../../assets/4_3.gif" alt="Matriz de una transformación lineal" class="bor">
             <p>Como vimos en el segundo video, podemos representar una transformación lineal de \( \mathbb{R}^n \) en \( \mathbb{R}^m \) usando matrices. En el siguiente video el profesor Marcelo nos muestra un camino posible para hallar la matriz de una transformación lineal de \( \mathbb{R}^2 \) en \( \mathbb{R}^2 \). Vamos a trabajar con la misma transformación del tercer video.</p>
             <ul>
                 <li><a href="https://www.youtube.com/watch?v=ocqL8BE3Cao" target="_blank">Video con ejemplo nro 1 en el que hallamos la matriz de una TL.</a></li>
@@ -143,11 +146,11 @@
                 <p>...\( Nu(T) \) es un espacio vectorial.</p>
                 <p>..\( Im(T) \) es un espacio vectorial.</p>
                 <h4>Ejemplos:</h4>
-                <p>El profe Gastón hizo este <a href="https://www.youtube.com/watch?v=3fvgJOdLX9M">Video con ejemplos en los que buscamos el núcleo de una TL</a>. Al verlo, notarán que se necesita resolver un sistema homogéneo. Para repasar sobre esto, pueden volver a revisar los temas del <a href="#">Libro 1</a> de esta segunda parte y/o del <a href="#">Libro 10"REVISAR SON 7 NADA MAS" de la primera parte</a>.</p>
-                <p>El profe Claudio nos acerca este <a href="https://www.youtube.com/watch?v=oAeET26e3O0">Video con ejemplos en los que buscamos la imagen de una TL</a>. En este caso, habrán advertido que es importante reconocer si un conjunto de vectores es linealmente independiente o no. En el siguiente video, el profe Martín T. nos muestra ejemplos de cómo averguar esto.</p>
+                <p>El profe Gastón hizo este <a href="https://www.youtube.com/watch?v=3fvgJOdLX9M" target="_blank">Video con ejemplos en los que buscamos el núcleo de una TL</a>. Al verlo, notarán que se necesita resolver un sistema homogéneo. Para repasar sobre esto, pueden volver a revisar los temas del <a href="#">Libro 1</a> de esta segunda parte y/o del <a href="#">Libro 10"REVISAR SON 7 NADA MAS" de la primera parte</a>.</p>
+                <p>El profe Claudio nos acerca este <a href="https://www.youtube.com/watch?v=oAeET26e3O0" target="_blank">Video con ejemplos en los que buscamos la imagen de una TL</a>. En este caso, habrán advertido que es importante reconocer si un conjunto de vectores es linealmente independiente o no. En el siguiente video, el profe Martín T. nos muestra ejemplos de cómo averguar esto.</p>
                 <ul>
                     <li>
-                        <a href="https://www.youtube.com/watch?v=AMVa9obaPV8">Video con ejemplos en los que indetificamos si un conjunto de vectores es LI o LD</a>
+                        <a href="https://www.youtube.com/watch?v=AMVa9obaPV8" target="_blank">Video con ejemplos en los que indetificamos si un conjunto de vectores es LI o LD</a>
                     </li>
                 </ul>
         </section>
@@ -176,10 +179,10 @@
         <section>
             <h2>7. Ejercitación y Autoevaluación</h2>
             <h3>Ejercitación</h3>
-            <p>Para ejercitación sobre el tema que trabajamos en este libro, tienen el <a href="https://drive.google.com/file/d/1OoYvZoEK8ynWSQSar9ZXud5Qsd0q99tp/view?usp=sharing">Listado de actividades para realizar sobre transformaciones lineales</a>. La idea es que los puedan pensar y hacer (si se juntan para hacerlos, mejor) y plantear sus dudas y resoluciones en el foro <a class="con">Consultas</a> y en el aula. Para uno de los ejercicios de práctica van a necesitar los <a href="https://drive.google.com/drive/folders/1YviTB1Z-JinZ6fvimDYUVc3Q4u7QKfYf?usp=sharing">Archivos GGB</a> para el problema 24 de la página 110 de la Guía de Problemas.</p>
+            <p>Para ejercitación sobre el tema que trabajamos en este libro, tienen el <a href="https://drive.google.com/file/d/1OoYvZoEK8ynWSQSar9ZXud5Qsd0q99tp/view?usp=sharing" target="_blank">Listado de actividades para realizar sobre transformaciones lineales</a>. La idea es que los puedan pensar y hacer (si se juntan para hacerlos, mejor) y plantear sus dudas y resoluciones en el foro <a class="con">Consultas</a> y en el aula. Para uno de los ejercicios de práctica van a necesitar los <a href="https://drive.google.com/drive/folders/1YviTB1Z-JinZ6fvimDYUVc3Q4u7QKfYf?usp=sharing" target="_blank">Archivos GGB</a> para el problema 24 de la página 110 de la Guía de Problemas.</p>
             <br>
             <h3>Autoevaluación</h3>
-            <p>Durante la segunda de estas dos semanas tendrán habilitada la <a href="https://campusvirtual.unm.edu.ar/moodle/mod/quiz/view.php?id=366255">Autoevaluación sobre transformaciones lineales</a> que forma parte de la evaluación continua (ingresen para poder ver la fecha de habilitación).</p>
+            <p>Durante la segunda de estas dos semanas tendrán habilitada la <a href="https://campusvirtual.unm.edu.ar/moodle/mod/quiz/view.php?id=366255" target="_blank">Autoevaluación sobre transformaciones lineales</a> que forma parte de la evaluación continua (ingresen para poder ver la fecha de habilitación).</p>
         </section>
     </main>
     <script src="../../js/script.js"></script>

@@ -13,87 +13,90 @@
         <h1>Libro 7 - del 24/6 al 7/7</h1>
     </header>
     
-    <h2>Tabla de contenidos</h2>
-    <ul>
-        <li>1. <a href="#introduccion">Introducción</a></li>
-        <li>2. <a href="#determinante-2x2">Determinante de matrices de 2x2</a></li>
-        <li>3. <a href="#determinante-3x3">Determinante de matrices de 3x3</a></li>
-        <li>4. <a href="#determinantes-nxn">Determinantes de matrices de nxn</a></li>
-        <li>5. <a href="#propiedades-determinantes">Propiedades de los determinantes</a></li>
-        <li>6. <a href="#determinantes-sistemas">Determinantes, sistemas de ecuaciones lineales y matriz inversa</a></li>
-        <li>7. <a href="#ejercicios">Ejercicios y problemas</a></li>
-        <li>8. <a href="#autoevaluacion">Autoevaluación</a></li>
-    </ul>
     <main>
-    <section id="introduccion">
-        <h2>1. Introducción</h2>
-        <p> En esta tercera unidad comenzamos trabajando con sistemas de ecuaciones lineales. Vimos que el hecho de usar matrices para resolver los sistemas por el método de Gauss simplifica la notación. Luego, comenzamo con el trabajo con matrices. Allí definimos la suma y la multiplicación de matrices, entre otros aspectos. También, notamos que podemos pensar en ecuaciones matriciales, es decir, ecuaciones donde los objetos que intervienen son matrices, y particularmente las incógnitas también lo son. A raíz de esto, pensamos en la noción de matriz inversa.</p>
-        <p>Todo eso nos lleva pensar si es posible encontrar una forma de anticipar qué matrices son inversibles y cuáles no, qué sistemas de ecuaciones tienen única solución y cuáles no. En este libro trabajaremos con una noción que nos permite hacer esa anticipación. Su nombre es determinante de una matriz. Lo que sigue tiene sentido para matrices cuadradas.</p>
-    </section>
+        <section id="indice">
+        <h2>Tabla de contenidos</h2>
+            <ul>
+                <li>1. <a href="#introduccion">Introducción</a></li>
+                <li>2. <a href="#determinante-2x2">Determinante de matrices de 2x2</a></li>
+                <li>3. <a href="#determinante-3x3">Determinante de matrices de 3x3</a></li>
+                <li>4. <a href="#determinantes-nxn">Determinantes de matrices de nxn</a></li>
+                <li>5. <a href="#propiedades-determinantes">Propiedades de los determinantes</a></li>
+                <li>6. <a href="#determinantes-sistemas">Determinantes, sistemas de ecuaciones lineales y matriz inversa</a></li>
+                <li>7. <a href="#ejercicios">Ejercicios y problemas</a></li>
+                <li>8. <a href="#autoevaluacion">Autoevaluación</a></li>
+            </ul>
+        </section>
+    
+        <section id="introduccion">
+            <h2>1. Introducción</h2>
+            <p> En esta tercera unidad comenzamos trabajando con sistemas de ecuaciones lineales. Vimos que el hecho de usar matrices para resolver los sistemas por el método de Gauss simplifica la notación. Luego, comenzamo con el trabajo con matrices. Allí definimos la suma y la multiplicación de matrices, entre otros aspectos. También, notamos que podemos pensar en ecuaciones matriciales, es decir, ecuaciones donde los objetos que intervienen son matrices, y particularmente las incógnitas también lo son. A raíz de esto, pensamos en la noción de matriz inversa.</p>
+            <p>Todo eso nos lleva pensar si es posible encontrar una forma de anticipar qué matrices son inversibles y cuáles no, qué sistemas de ecuaciones tienen única solución y cuáles no. En este libro trabajaremos con una noción que nos permite hacer esa anticipación. Su nombre es determinante de una matriz. Lo que sigue tiene sentido para matrices cuadradas.</p>
+        </section>
 
-    <section id="determinante-2x2">
-        <h2>2. Determinante de matrices de 2x2</h2>
-        <p>En el siguiente video, comenzamos pensando esta idea mencionada en el párrafo anterior para matrices de \( 2×2 \) a partir del <a href="https://drive.google.com/file/d/1yo0t1bjVNKSQAv2S-OTAYhC2MFs2OwaZ/view?usp=sharing">problema 36 de la página 64 de la Guía de problemas</a>. Les recomendamos que primero intenten pensarlo ustedes.</p>
-        <ul>
-            <li><a href="https://www.youtube.com/watch?v=t_xJvA3g5UA">Video sobre determinantes de matrices de \( 2×2 \)</a></li>
-        </ul>
-        <p>En el video el profesor Marcelo comienza contándonos una idea de por qué tiene sentido pensar en el determinante.</p>
-        <img src="../assets/banner.png" alt="Pensar" style="border-radius: 15px; width: 50%; height: auto;">
-        <p>Pero, ¿qué es el determinante de una matriz de \( 2 ×2 \)? ¿cómo se calcula? No se queden con estas dudas. Si es así, por favor, vuelvan a ver el video, realicen sus Consultas en el foro y/o en los encuentros presenciales.</p>
-    </section>
+        <section id="determinante-2x2">
+            <h2>2. Determinante de matrices de 2x2</h2>
+            <p>En el siguiente video, comenzamos pensando esta idea mencionada en el párrafo anterior para matrices de \( 2×2 \) a partir del <a href="https://drive.google.com/file/d/1yo0t1bjVNKSQAv2S-OTAYhC2MFs2OwaZ/view?usp=sharing" target="_blank">problema 36 de la página 64 de la Guía de problemas</a>. Les recomendamos que primero intenten pensarlo ustedes.</p>
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=t_xJvA3g5UA" target="_blank">Video sobre determinantes de matrices de \( 2×2 \)</a></li>
+            </ul>
+            <p>En el video el profesor Marcelo comienza contándonos una idea de por qué tiene sentido pensar en el determinante.</p>
+            <img src="../assets/banner.png" alt="Pensar" class="redu">
+            <p>Pero, ¿qué es el determinante de una matriz de \( 2 ×2 \)? ¿cómo se calcula? No se queden con estas dudas. Si es así, por favor, vuelvan a ver el video, realicen sus Consultas en el foro y/o en los encuentros presenciales.</p>
+        </section>
 
-    <section id="determinante-3x3">
-        <h2>3. Determinante de matrices de \( 3x3 \)</h2>
-        <p>Si aún te quedaron dudas sobre cómo se calcula el determinante de una matriz de \( 2×2 \), en el siguiente video, el profesor Marcelo comienza recordándolo. ¿Es posible extender esta idea a matrices de \( 3×3 \) ? En el video el profesor nos lo cuenta:</p>
-        <ul>
-            <li><a href="https://www.youtube.com/watch?v=2iWMwr5iyPc">Video sobre determinantes de matrices de \( 3x3 \)</a></li>
-        </ul>
-        <p> ¿Se puede obtener el determinante de una matriz de \( 3x3 \)? ¿cómo?</p>
-        <img src="../assets/detdet.gif" alt="Determiinantes">
-    </section>
+        <section id="determinante-3x3">
+            <h2>3. Determinante de matrices de \( 3x3 \)</h2>
+            <p>Si aún te quedaron dudas sobre cómo se calcula el determinante de una matriz de \( 2×2 \), en el siguiente video, el profesor Marcelo comienza recordándolo. ¿Es posible extender esta idea a matrices de \( 3×3 \) ? En el video el profesor nos lo cuenta:</p>
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=2iWMwr5iyPc" target="_blank">Video sobre determinantes de matrices de \( 3x3 \)</a></li>
+            </ul>
+            <p> ¿Se puede obtener el determinante de una matriz de \( 3x3 \)? ¿cómo?</p>
+            <img src="../assets/detdet.gif" alt="Determiinantes" class="bor">
+        </section>
 
-    <section id="determinantes-nxn">
-        <h2>4. Determinantes de matrices de \( nxn \)</h2>
-        <p>¿Es posible extender la idea de determinante a matrices de otros tamaños? El profesor Daniel nos lo cuenta en el siguiente video:</p>
-        <ul>
-            <li><a href="https://www.youtube.com/watch?v=LPOlr4zJAgk">Video sobre determinantes de matrices de \( nxn \)</a></li>
-        </ul>
-    </section>
+        <section id="determinantes-nxn">
+            <h2>4. Determinantes de matrices de \( nxn \)</h2>
+            <p>¿Es posible extender la idea de determinante a matrices de otros tamaños? El profesor Daniel nos lo cuenta en el siguiente video:</p>
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=LPOlr4zJAgk" target="_blank">Video sobre determinantes de matrices de \( nxn \)</a></li>
+            </ul>
+        </section>
 
-    <section id="propiedades-determinantes">
-        <h2>5. Propiedades de los determinantes</h2>
-        <p>En el siguiente video, el profesor Gastón nos presenta algunas propiedades de los determinantes. La veracidad de estas propiedades puede demostrarse (en varios libros lo hacen). Les acercamos el <a href="https://drive.google.com/file/d/1dIxFeY_Lap1Cy4p0iHl6mYOuZyJrUi_-/view?usp=sharing">capítulo sobre determinantes del libro Grossman y Flores (2012) Álgebra lineal. Cap. 3. Pág 176 a 230</a>. Nos limitaremos a presentar algunas de esas propiedades y mostrar algún ejemplo en el que las aplicamos. Invitamos a que ustedes calculen el determinante de las matrices de los ejemplos del video usando la definición y verifiquen que da lo mismo si aplican la propiedad.</p>
-        <ul>
-            <li><a href="https://www.youtube.com/watch?v=OONhwpYDhCI">Video sobre propiedades de los determinantes</a></li>
-        </ul>
-    </section>
+        <section id="propiedades-determinantes">
+            <h2>5. Propiedades de los determinantes</h2>
+            <p>En el siguiente video, el profesor Gastón nos presenta algunas propiedades de los determinantes. La veracidad de estas propiedades puede demostrarse (en varios libros lo hacen). Les acercamos el <a href="https://drive.google.com/file/d/1dIxFeY_Lap1Cy4p0iHl6mYOuZyJrUi_-/view?usp=sharing" target="_blank">capítulo sobre determinantes del libro Grossman y Flores (2012) Álgebra lineal. Cap. 3. Pág 176 a 230</a>. Nos limitaremos a presentar algunas de esas propiedades y mostrar algún ejemplo en el que las aplicamos. Invitamos a que ustedes calculen el determinante de las matrices de los ejemplos del video usando la definición y verifiquen que da lo mismo si aplican la propiedad.</p>
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=OONhwpYDhCI" target="_blank">Video sobre propiedades de los determinantes</a></li>
+            </ul>
+        </section>
 
-    <section id="determinantes-sistemas">
-        <h2>6. Determinantes, sistemas de ecuaciones lineales y matriz inversa</h2>
-        <p>Por último, queremos mencionar dos propiedades importantes en relación con los determinantes, la inversibilidad de una matriz y la cantidad de soluciones de un sistema de ecuaciones lineales:</p>
-        <p>Sea \( A \) una matriz cuadrada de \( n×n \), entonces, las proposiciones que siguen son equivalentes:</p>
-        <ul>
-            <li>El determinante de la matriz \( A \) es distinto de \( 0 \).</li>
-            <li>La matriz \( A \) es inversible.</li>
-            <li>El sistema \( A \cdot X = b \) tiene única solución.</li>
-        </ul>
-        <p>Que las proposiciones sean equivalentes significa que si se cumple una de ellas, entonces, se cumplen todas las demás. Y si no se cumple alguna de ellas, entonces, tampoco se cumplen las demás.</p>
-        <p> En este caso, lo que sucede es que un sistema de \( n \) ecuaciones con \( n \) incógnitas tiene única solución si y solo si el determinante de la matriz asociada es distinto de \( 0 \). Y que un sistema de \( n \) ecuaciones con \( n \) incógnitas tiene única solución si y solo si la matriz asociada es inversible. Y que una matriz es inversible si y solo si el determinante es distinto de \( 0 \).</p>
-        <p>Por otro lado, si el determinante de la matriz asociada a un sistema de \( n \) ecuaciones lineales con \( n \) incógnitas es \( 0 \), eso significa que el sistema no tiene única solución. Es decir, puede no tener ninguna o tener infinitas.</p>
-    </section>
+        <section id="determinantes-sistemas">
+            <h2>6. Determinantes, sistemas de ecuaciones lineales y matriz inversa</h2>
+            <p>Por último, queremos mencionar dos propiedades importantes en relación con los determinantes, la inversibilidad de una matriz y la cantidad de soluciones de un sistema de ecuaciones lineales:</p>
+            <p>Sea \( A \) una matriz cuadrada de \( n×n \), entonces, las proposiciones que siguen son equivalentes:</p>
+            <ul>
+                <li>El determinante de la matriz \( A \) es distinto de \( 0 \).</li>
+                <li>La matriz \( A \) es inversible.</li>
+                <li>El sistema \( A \cdot X = b \) tiene única solución.</li>
+            </ul>
+            <p>Que las proposiciones sean equivalentes significa que si se cumple una de ellas, entonces, se cumplen todas las demás. Y si no se cumple alguna de ellas, entonces, tampoco se cumplen las demás.</p>
+            <p> En este caso, lo que sucede es que un sistema de \( n \) ecuaciones con \( n \) incógnitas tiene única solución si y solo si el determinante de la matriz asociada es distinto de \( 0 \). Y que un sistema de \( n \) ecuaciones con \( n \) incógnitas tiene única solución si y solo si la matriz asociada es inversible. Y que una matriz es inversible si y solo si el determinante es distinto de \( 0 \).</p>
+            <p>Por otro lado, si el determinante de la matriz asociada a un sistema de \( n \) ecuaciones lineales con \( n \) incógnitas es \( 0 \), eso significa que el sistema no tiene única solución. Es decir, puede no tener ninguna o tener infinitas.</p>
+        </section>
 
-    <section id="ejercicios">
-        <h2>7. Ejercicios y problemas</h2>
-        <p>En la <a href="https://drive.google.com/file/d/1Uv7-JBVRw5zR7lrbTi4cPwZZAAnYNZ23/view?usp=sharing">Guía de trabajo con determinantes</a> les proponemos que realicen ejercicios y problemas. En el archivo anterior les proponemos <a href="https://drive.google.com/file/d/1yo0t1bjVNKSQAv2S-OTAYhC2MFs2OwaZ/view?usp=sharing">ejercicios y problemas de la Guía de problemas</a> y de <a href="https://drive.google.com/file/d/1TnXPXeIcfhovNDpa4KWfBmiVu7qqjFAW/view?usp=sharing">Maestripieri, Pavón y Resmesar (2017). Notas de Álgebra Lineal. Cap. 1. Pág 138 a 141</a>.</p>
-        <img src="../assets/practica.jpg" alt="Práctica" style="border-radius: 15px; width: 50%; height: auto;">
-    </section>
+        <section id="ejercicios">
+            <h2>7. Ejercicios y problemas</h2>
+            <p>En la <a href="https://drive.google.com/file/d/1Uv7-JBVRw5zR7lrbTi4cPwZZAAnYNZ23/view?usp=sharing" target="_blank">Guía de trabajo con determinantes</a> les proponemos que realicen ejercicios y problemas. En el archivo anterior les proponemos <a href="https://drive.google.com/file/d/1yo0t1bjVNKSQAv2S-OTAYhC2MFs2OwaZ/view?usp=sharing" target="_blank">ejercicios y problemas de la Guía de problemas</a> y de <a href="https://drive.google.com/file/d/1TnXPXeIcfhovNDpa4KWfBmiVu7qqjFAW/view?usp=sharing" target="_blank">Maestripieri, Pavón y Resmesar (2017). Notas de Álgebra Lineal. Cap. 1. Pág 138 a 141</a>.</p>
+            <img src="../assets/practica.jpg" alt="Práctica" class="redu">
+        </section>
 
-    <section id="autoevaluacion">
-        <h2>8. Autoevaluación</h2>
-        <p>Como parte de la evaluación continua les proponemos la <a href="https://campusvirtual.unm.edu.ar/moodle/mod/quiz/view.php?id=366193">Autoevaluación sobre determinantes</a>. Ingresen al cuestionario para ver la fecha de apertura y la de cierre. Esta autoevaluación involucra temas de las últimas dos semanas.</p>
-        <p>El puntaje que se obtiene en la autoevaluación solo debe tomarse como un porcentaje de resolución correcta.</p>
-        <p>Esperamos que para cuando sea el momento de realizar la autoevaluación hayan podido realizar las actividades de práctica, realizado las <a class="con">Consultas</a>, leído los textos y vistos los videos.</p>
-    </section>
+        <section id="autoevaluacion">
+            <h2>8. Autoevaluación</h2>
+            <p>Como parte de la evaluación continua les proponemos la <a href="https://campusvirtual.unm.edu.ar/moodle/mod/quiz/view.php?id=366193" target="_blank">Autoevaluación sobre determinantes</a>. Ingresen al cuestionario para ver la fecha de apertura y la de cierre. Esta autoevaluación involucra temas de las últimas dos semanas.</p>
+            <p>El puntaje que se obtiene en la autoevaluación solo debe tomarse como un porcentaje de resolución correcta.</p>
+            <p>Esperamos que para cuando sea el momento de realizar la autoevaluación hayan podido realizar las actividades de práctica, realizado las <a class="con">Consultas</a>, leído los textos y vistos los videos.</p>
+        </section>
     </main>
     <script src="../js/script.js"></script>
 </body>
