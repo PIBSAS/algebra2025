@@ -190,9 +190,8 @@ h2 {
 
 @media (max-width: 600px) {
   mjx-container, .katex-display {
-      font-size: 14px; /* Reduce el tamaño en pantallas pequeñas */
+      font-size: 12px; /* Reduce el tamaño en pantallas pequeñas */
       display: block;
-      text-align: center;
       line-height: 1.2;
   }
 }
