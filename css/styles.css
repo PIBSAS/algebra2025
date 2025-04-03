@@ -103,7 +103,7 @@ h2 {
 .index-page #btn15 { left: 88%; top: 74%; }
 
 .footer {
-  position: fixed;
+  position: relative;
   bottom: 20px;
   left: 0;
   right: 0;
