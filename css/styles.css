@@ -102,6 +102,16 @@ h2 {
 .index-page #btn14 { left: 42%; top: 13%; }
 .index-page #btn15 { left: 88%; top: 74%; }
 
+.footer {
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
 .arrow {
   cursor: pointer;
   background: none;
