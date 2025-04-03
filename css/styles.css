@@ -101,3 +101,66 @@ h2 {
 .index-page #btn13 { left: 78%; top: 78%; }
 .index-page #btn14 { left: 42%; top: 13%; }
 .index-page #btn15 { left: 88%; top: 74%; }
+
+.arrow {
+  cursor: pointer;
+  background: none;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  width: 70px;
+  gap: 4px;
+}
+
+.arrow-right:hover {
+  animation: move-right 2s infinite ease;
+}
+
+.arrow-left:hover {
+  animation: move-left 2s infinite ease;
+}
+
+@keyframes move-right {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(20px); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes move-left {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(-20px); }
+  100% { transform: translateX(0); }
+}
+
+.round {
+  width: 6px;
+  height: 6px;
+  background: #3da9fc;
+  border-radius: 50%;
+}
+
+.line {
+  display: flex;
+  gap: 4px;
+}
+
+.two {
+  transform: translateX(10px);
+}
+
+.three {
+  transform: translateX(20px);
+}
+
+.four {
+  transform: translateX(30px);
+}
+
+.five {
+  transform: translateX(20px);
+}
+
+.six {
+  transform: translateX(10px);
+}
+
