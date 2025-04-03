@@ -129,12 +129,14 @@ h2 {
   display: flex;
   gap: 4px;
   justify-content: flex-start;
+  margin-left: 20px;
 }
 
 .arrow-right .line {
   display: flex;
   gap: 4px;
   justify-content: flex-end;
+  margin-right: 20px;
 }
 
 .arrow-right:hover {
