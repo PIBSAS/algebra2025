@@ -189,10 +189,10 @@ h2 {
 .arrow-left .six { transform: translateX(-10px); }
 
 @media (max-width: 600px) {
-  mjx-container, .katex-display {
-      font-size: 12px; /* Reduce el tamaño en pantallas pequeñas */
-      display: block;
+  mjx-container[display="true"]
+      font-size: 14px;
       line-height: 1.2;
   }
 }
+
 
