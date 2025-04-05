@@ -113,7 +113,7 @@
 
         <section id="#nucleo">
             <h2>6.1. Núcleo de \( T \)</h2>
-            <p>En primer lugar, notemos que en cualquier transformación lineal \( T:\mathbb{R}^n\to\mathbb{R}^m \) ocurre que el transformado del vector nulo de \( \mathbb{R}^n \) es el vector nulo de \( \mathbb{R}^m \). es decir, que \( T(\vec{0})=\vec{0} \).Esto se deduce en un renglón a partir de una de las dos propiedades iniciales que definen a las transformaciones lineales y teniendo en cuenta que el vector nulo es igual al número \( 0 \) multiplicado por cualquier vector.</p>
+            <p>En primer lugar, notemos que en cualquier transformación lineal \( T:\mathbb{R}^n\to\mathbb{R}^m \) ocurre que el transformado del vector nulo de \( \mathbb{R}^n \) es el vector nulo de \( \mathbb{R}^m \). Es decir, que \( T(\vec{0})=\vec{0} \). Esto se deduce en un renglón a partir de una de las dos propiedades iniciales que definen a las transformaciones lineales y teniendo en cuenta que el vector nulo es igual al número \( 0 \) multiplicado por cualquier vector.</p>
             <p>¿Es el vector nulo el único vector del dominio de \( T \) que se transforma en el nulo? La respuesta es... depende de la transformación. En algunos casos sí, en otros no. Hay ejemplos de transformaciones lineales en las que existen otros vectores cuyo transformado es el nulo. Por ejemplo, si pensamos en una proyección ortogonal de \( \mathbb{R}^3 \) en \( \mathbb{R}^3 \) con respecto al plano \( \pi:x-z=0 \). Es decir, cualquier punto del espacio se transforma en un punto sobre el plano \( \pi \) de modo que el segmento que une al vector y su transformado es perpendicular al plano. ¿Quiénes son los vectores que se transforman en el nulo? O sea, ¿cuáles puntos del espacio que se proyectan perpendicularmente al plano van a parar al origen? Piénsenlo... Bueno... lo decimos... Cualquier punto que esté sobre la recta perpendicular al plano por el origen, en definitiva, cualquier vector perpendicular al plano, se proyecta sobre el vector nulo. En este ejemplo, esta transformación puede definirse así (pueden intentar buscarla, para ello tengan en cuenta que cualquier vector del plano se transforma en sí mismo):</p>
             <p>\[ T:\mathbb{R}^3\to\mathbb{R}^3:T\begin{pmatrix} x\\ y\\ z \end{pmatrix}=\begin{pmatrix} \frac{1}{2} & 0 &\frac{1}{2}\\ 0 & 1 & 0\\ \frac{1}{2} & 0 & \frac{1}{2} \end{pmatrix}\cdot\begin{pmatrix} x\\ y\\ z \end{pmatrix} \]</p>
             <p>Pueden comprobar que los vectores prependiculares al plano se transforman en el nulo usando la matriz de la transformación.</p>
@@ -121,8 +121,7 @@
             <p>Sea \( T:\mathbb{R}^n\to\mathbb{R}^m \) una transformación lineal.</p>
             <p>Llamaremos Núcleo de \( T \) al conjunto de todos los vectores del dominio ( \( \mathbb{R}^n \) en este caso) que se transforman en el vector nulo. Es decir, el Núcleo está formado por todos los vectores \( \vec{v}\in\mathbb{R}^n \) tales que \( T(\vec{v})=\vec{0} \). Al Núcleo también se lo suele llamar Kernel y lo notamos \( Nu(T) \) o \( Ker(T) \).Este conjunto es análogo al llamado conjunto de raíces o ceros de las funciones sobre los reales.</p>
             <p>En forma simbólica, puede escribirse esta definición así:</p>
-            <p>Sea \( T:\mathbb{R}^n\to\mathbb{R}^m \) una transformación lineal.</p>
-            <p>\( Nu(T) = \left\{ \vec{v} \in \mathbb{R}^n : T( \vec{v} ) = \vec{0}  \right\} \)</p>
+            <p>Sea \( T:\mathbb{R}^n\to\mathbb{R}^m \) una transformación lineal. \( Nu(T) = \left\{ \vec{v} \in \mathbb{R}^n : T( \vec{v} ) = \vec{0}  \right\} \)</p>
         </section>
 
          
