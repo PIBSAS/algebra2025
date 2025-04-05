@@ -188,7 +188,6 @@ h2 {
 .arrow-left .five { transform: translateX(-20px); }
 .arrow-left .six { transform: translateX(-10px); }
 
-video.yt {
-  display: block;
-  margin-bottom: 1em;
+.video-js {
+  margin-bottom: 1em !important;
 }
