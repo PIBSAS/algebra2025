@@ -187,3 +187,8 @@ h2 {
 .arrow-left .four { transform: translateX(-30px); }
 .arrow-left .five { transform: translateX(-20px); }
 .arrow-left .six { transform: translateX(-10px); }
+
+video.yt {
+  display: block;
+  margin-bottom: 1em;
+}
