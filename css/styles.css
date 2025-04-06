@@ -210,3 +210,9 @@ h2 {
   height: 100% !important;
   width: 100% !important;
 }
+
+@supports (font-size-adjust: none) {
+  mjx-math {
+    font-size-adjust: none;
+  }
+}
