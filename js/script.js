@@ -19,10 +19,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
         el.textContent = "";
         el.id = id;
-        el.classList.add("video-js", "vjs-default-skin");
+        el.classList.add("video-js", "vjs-default-skin", "vjs-fluid");
         el.setAttribute("controls", true);
-        el.setAttribute("width", "640");
-        el.setAttribute("height", "360");
 
         const setup = {
             techOrder: ["youtube"],
@@ -33,7 +31,9 @@ document.addEventListener("DOMContentLoaded", function() {
             youtube: {
                 modestbranding: 1,
                 rel: 0
-            }
+            },
+            fluid: true,
+            aspectRatio: "16:9"
         };
 
         el.setAttribute("data-setup", JSON.stringify(setup));
