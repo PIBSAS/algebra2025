@@ -45,7 +45,10 @@ h2 {
     padding: 20px;
     text-align: center;
     text-shadow: 2px 2px 4px #000000;
-    width: 30%;
+    width: fir-content;
+    max-width: 75%;
+    word-wrap: break-word;
+    font-size: clamp(18px, 3vw, 28px);
   }
 
 .index-page {
