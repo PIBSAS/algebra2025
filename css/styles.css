@@ -85,12 +85,12 @@ h2 {
 }
 
 /* Posiciones de los botones en la primera montaña (7 semanas) */
-.index-page #btn1 { left: 1%; top: 60%; }
-.index-page #btn2 { left: 4%; top: 50%; }
-.index-page #btn3 { left: 15%; top: 55%; }
-.index-page #btn4 { left: 21%; top: 45%; }
-.index-page #btn5 { left: 24%; top: 35%; }
-.index-page #btn6 { left: 27%; top: 20%; }
+.index-page #btn1 { left: 1%; top: 50%; }
+.index-page #btn2 { left: 4%; top: 40%; }
+.index-page #btn3 { left: 15%; top: 35%; }
+.index-page #btn4 { left: 21%; top: 25%; }
+.index-page #btn5 { left: 24%; top: 15%; }
+.index-page #btn6 { left: 27%; top: 10%; }
 .index-page #btn7 { left: 40%; top: 6%; }
 
 /* Posiciones de los botones en la segunda montaña (6 semanas) */
