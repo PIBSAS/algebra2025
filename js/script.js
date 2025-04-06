@@ -24,6 +24,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
         const setup = {
             techOrder: ["youtube"],
+            plugins: {
+                chromecast: {}
+            },
             sources: [{
                 type: "video/youtube",
                 src: url
@@ -37,7 +40,14 @@ document.addEventListener("DOMContentLoaded", function() {
         };
 
         el.setAttribute("data-setup", JSON.stringify(setup));
-        videojs(id);
+        const player = videojs(id);
+        player.ready(function () {
+            if (player.chromecast) {
+                console.log("Chromecast listo en", id);
+            } else {
+                console.warn("Chromecast no disponible en", id);
+            }
+        });
     });
 });
 
