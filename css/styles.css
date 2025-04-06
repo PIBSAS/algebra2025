@@ -91,17 +91,17 @@ h2 {
 .index-page #btn4 { left: 21%; top: 25%; }
 .index-page #btn5 { left: 24%; top: 15%; }
 .index-page #btn6 { left: 28%; top: 5%; }
-.index-page #btn7 { left: 38%; top: 1%; }
+.index-page #btn7 { left: 35%; top: 1%; }
 
 /* Posiciones de los botones en la segunda montaña (6 semanas) */
-.index-page #btn8 { left: 43%; top: 19%; }
-.index-page #btn9 { left: 46%; top: 28%; }
-.index-page #btn10 { left: 52%; top: 42%; }
-.index-page #btn11 { left: 58%; top: 48%; }
-.index-page #btn12 { left: 70%; top: 60%; }
-.index-page #btn13 { left: 78%; top: 78%; }
-.index-page #btn14 { left: 42%; top: 13%; }
-.index-page #btn15 { left: 88%; top: 74%; }
+.index-page #btn8 { left: 41%; top: 19%; }
+.index-page #btn9 { left: 48%; top: 32%; }
+.index-page #btn10 { left: 52%; top: 38%; }
+.index-page #btn11 { left: 58%; top: 49%; }
+.index-page #btn12 { left: 62%; top: 53%; }
+.index-page #btn13 { left: 64%; top: 60%; }
+.index-page #btn14 { left: 40%; top: 11%; }
+.index-page #btn15 { left: 70%; top: 64%; }
 
 .redu {
   border-radius: 15px;
