@@ -24,9 +24,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
         const setup = {
             techOrder: ["youtube"],
-            plugins: {
-                chromecast: {}
-            },
             sources: [{
                 type: "video/youtube",
                 src: url
