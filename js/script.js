@@ -22,6 +22,8 @@ document.addEventListener("DOMContentLoaded", function() {
         el.id = id;
         el.classList.add("video-js", "vjs-default-skin");
         el.setAttribute("controls", true);
+        el.setAttribute("width", "640");
+        el.setAttribute("height", "360");
 
         const setup = {
             techOrder: ["youtube"],
