@@ -191,3 +191,17 @@ h2 {
 .video-js {
   margin-bottom: 1.5em !important;
 }
+
+@media screen and (max-width: 768px) {
+  .video-js {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100%;
+  }
+
+  video {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+
