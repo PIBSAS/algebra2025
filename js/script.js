@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
+    const isMobile = window.innerWidth <= 768;
     const ytVideos = document.querySelectorAll("video.yt");
 
     ytVideos.forEach((el, index) => {
@@ -19,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         el.textContent = "";
         el.id = id;
-        el.classList.add("video-js", "vjs-default-skin", "vjs-fluid");
+        el.classList.add("video-js", "vjs-default-skin");
         el.setAttribute("controls", true);
 
         const setup = {
@@ -32,8 +33,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 modestbranding: 1,
                 rel: 0
             },
-            fluid: true,
-            aspectRatio: "16:9"
+            ...(isMobile ? {
+                fluid: true,
+                aspectRatio: "16:9"
+            } : {})
         };
 
         el.setAttribute("data-setup", JSON.stringify(setup));
