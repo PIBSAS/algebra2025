@@ -51,7 +51,7 @@ h2 {
     font-size: clamp(18px, 3vw, 28px);
   }
 
-iframe {
+iframe.d {
   width: 60%;
   height: 133vh;
   border: none;
@@ -60,7 +60,7 @@ iframe {
 }
 
 @media (max-width: 768px) {
-  iframe {
+  iframe.d {
     height: 50vh;
   }
 }

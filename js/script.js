@@ -44,5 +44,11 @@ document.addEventListener("DOMContentLoaded", function() {
         el.setAttribute("data-setup", JSON.stringify(setup));
         videojs(id);
     });
+    document.querySelectorAll("iframe.d").forEach(iframe => {
+        const id = iframe.textContent.trim();
+        iframe.textContent = ""; // limpiar contenido
+        iframe.src = `https://drive.google.com/file/d/${id}/preview`;
+        iframe.setAttribute("allow", "autoplay");
+    });
 });
 
