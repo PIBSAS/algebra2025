@@ -42,7 +42,17 @@ document.addEventListener("DOMContentLoaded", function() {
         };
 
         el.setAttribute("data-setup", JSON.stringify(setup));
-        videojs(id);
+        const player = videojs(id);
+        player.ready(function () {
+            const el = this.el();
+            el.style.borderRadius = "16px";
+            el.style.overflow = "hidden";
+
+            const iframe = el.querySelector("iframe");
+            if (iframe) {
+                iframe.style.borderRadius = "16px";
+            }
+        });
     });
     document.querySelectorAll("iframe.d").forEach(iframe => {
         const id = iframe.textContent.trim();
