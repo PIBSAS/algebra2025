@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const isMobile = window.innerWidth <= 720;
     if (isMobile) {
-        const botones = document.querySelectorAll(".btn");
+        const botones = document.querySelectorAll(".index-page .button");
         const coordsMovil = [
             { left: 60, top: 257 },
             { left: 190, top: 240 },
