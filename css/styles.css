@@ -69,6 +69,9 @@ iframe.d {
 }
 
 .index-page {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
     overflow: hidden;
     text-align: center;
     background-color: #f0f0f0;
@@ -93,18 +96,19 @@ iframe.d {
 .index-page .button {
     position: absolute;
     transform: translate(-50%, -50%);
-    padding: 5px 10px;
+    padding: 0.5vw 1.0vw;
+    font-size: 1.5vw;
     background-color: #007bff;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 0.55vw;
     cursor: pointer;
 }
 
 @media (max-width: 720px) {
   .index-page .button {
       font-size: clamp(10px, 4vw, 16px);
-      padding: 6px 10px;
+      padding: 0.6vw 1.2vw;
   }
 }
 
