@@ -207,7 +207,13 @@ iframe.d {
 .arrow-left .six { transform: translateX(-10px); }
 
 .video-js {
-  margin-bottom: 1.5em !important;
+  margin-top: 2em !important;
+  margin-bottom: 3em !important;
+  border-radius: 15px !important;
+}
+
+.video-js iframe {
+  border-radius: 15px !important;
 }
 
 .video-js.vjs-fluid {
