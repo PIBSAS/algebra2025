@@ -104,24 +104,24 @@ iframe.d {
     background-color: #0056b3;
 }
 
-/* Posiciones de los botones en la primera montaña (7 semanas) */
-.index-page #btn1 { left: 1%; top: 45%; }
-.index-page #btn2 { left: 4%; top: 37%; }
-.index-page #btn3 { left: 19%; top: 35%; }
-.index-page #btn4 { left: 21%; top: 25%; }
-.index-page #btn5 { left: 24%; top: 15%; }
-.index-page #btn6 { left: 28%; top: 0%; }
-.index-page #btn7 { left: 36%; top: -1%; }
+/* Primera montaña (7 semanas) */
+.index-page #btn1 { left: calc(191 / 1920 * 100vw); top: calc(634 / 1080 * 100vh); }
+.index-page #btn2 { left: calc(362 / 1920 * 100vw); top: calc(526 / 1080 * 100vh); }
+.index-page #btn3 { left: calc(625 / 1920 * 100vw); top: calc(465 / 1080 * 100vh); }
+.index-page #btn4 { left: calc(662 / 1920 * 100vw); top: calc(368 / 1080 * 100vh); }
+.index-page #btn5 { left: calc(713 / 1920 * 100vw); top: calc(242 / 1080 * 100vh); }
+.index-page #btn6 { left: calc(752 / 1920 * 100vw); top: calc(181 / 1080 * 100vh); }
+.index-page #btn7 { left: calc(823 / 1920 * 100vw); top: calc(170 / 1080 * 100vh); }
 
-/* Posiciones de los botones en la segunda montaña (6 semanas) */
-.index-page #btn8 { left: 43%; top: 19%; }
-.index-page #btn9 { left: 48%; top: 33%; }
-.index-page #btn10 { left: 54%; top: 39%; }
-.index-page #btn11 { left: 58%; top: 49%; }
-.index-page #btn12 { left: 67%; top: 51%; }
-.index-page #btn13 { left: 69%; top: 57%; }
-.index-page #btn14 { left: 40%; top: 11%; }
-.index-page #btn15 { left: 78%; top: 63%; }
+/* Segunda montaña (6 semanas) */
+.index-page #btn8  { left: calc(874 / 1920 * 100vw); top: calc(280 / 1080 * 100vh); }
+.index-page #btn9  { left: calc(918 / 1920 * 100vw); top: calc(354 / 1080 * 100vh); }
+.index-page #btn10 { left: calc(966 / 1920 * 100vw); top: calc(427 / 1080 * 100vh); }
+.index-page #btn11 { left: calc(1007 / 1920 * 100vw); top: calc(487 / 1080 * 100vh); }
+.index-page #btn12 { left: calc(1100 / 1920 * 100vw); top: calc(543 / 1080 * 100vh); }
+.index-page #btn13 { left: calc(1125 / 1920 * 100vw); top: calc(616 / 1080 * 100vh); }
+.index-page #btn14 { left: calc(850 / 1920 * 100vw); top: calc(227 / 1080 * 100vh); }
+.index-page #btn15 { left: calc(1200 / 1920 * 100vw); top: calc(680 / 1080 * 100vh); }
 
 .redu {
   border-radius: 15px;
@@ -240,4 +240,22 @@ iframe.d {
   mjx-math {
     font-size-adjust: none;
   }
+}
+
+@media (max-width: 720px) {
+  .index-page .button {
+      font-size: clamp(10px, 4vw, 16px);
+      padding: 6px 10px;
+  }
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.button {
+  position: absolute;
+  transform: translate(-50%, -50%);
 }

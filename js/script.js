@@ -11,7 +11,34 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-    const isMobile = window.innerWidth <= 768;
+    const isMobile = window.innerWidth <= 720;
+    if (isMobile) {
+        const botones = document.querySelectorAll(".btn");
+        const coordsMovil = [
+            { left: 60, top: 257 },
+            { left: 190, top: 240 },
+            { left: 300, top: 700 },
+            { left: 340, top: 600 },
+            { left: 380, top: 480 },
+            { left: 400, top: 400 },
+            { left: 430, top: 390 },
+            { left: 120, top: 950 },
+            { left: 220, top: 800 },
+            { left: 300, top: 700 },
+            { left: 340, top: 600 },
+            { left: 380, top: 480 },
+            { left: 400, top: 400 }
+        ];
+
+        botones.forEach((btn, i) => {
+            const coord = coordsMovil[i];
+            if (coord) {
+                btn.style.left = `${(coord.left / 720) * 100}vw`;
+                btn.style.top = `${(coord.top / 1612) * 100}vh`;
+            }
+        });
+    }
+
     const ytVideos = document.querySelectorAll("video.yt");
 
     ytVideos.forEach((el, index) => {
