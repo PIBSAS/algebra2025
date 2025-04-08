@@ -79,6 +79,14 @@ iframe.d {
     background-size: cover;
 }
 
+.index-page main {
+  padding: 0;
+}
+
+.index-page body{
+  background-color: transparent;
+}
+
 .index-page header {
     background: none; /* Sin fondo */
     color: black;     /* Texto en negro */
