@@ -20,16 +20,16 @@ document.addEventListener("DOMContentLoaded", function() {
             { left: 210, top: 290 },
             { left: 220, top: 335},
             { left: 230, top: 380 },
-            { left: 250, top: 415 },
-            { left: 275, top: 450 },
-            { left: 350, top: 540 },
-            { left: 400, top: 600 },
-            { left: 430, top: 680 },
+            { left: 260, top: 415 },
+            { left: 280, top: 460 },
+            { left: 355, top: 560 },
+            { left: 390, top: 620 },
+            { left: 425, top: 680 },
             { left: 465, top: 720 },
             { left: 490, top: 780 },
             { left: 590, top: 790 },
-            { left: 290, top: 470 },
-            { left: 648, top: 825 }
+            { left: 345, top: 550 },
+            { left: 645, top: 830 }
         ];
 
         botones.forEach((btn, i) => {
