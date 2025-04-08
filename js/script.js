@@ -18,18 +18,18 @@ document.addEventListener("DOMContentLoaded", function() {
             { left: 60, top: 257 },
             { left: 180, top: 240 },
             { left: 210, top: 275 },
-            { left: 215, top: 300},
-            { left: 230, top: 315 },
-            { left: 240, top: 355 },
-            { left: 245, top: 370 },
-            { left: 250, top: 410 },
-            { left: 255, top: 430 },
-            { left: 270, top: 460 },
-            { left: 276, top: 500 },
-            { left: 285, top: 530 },
-            { left: 290, top: 560 },
-            { left: 250, top: 380 },
-            { left: 520, top: 1300 }
+            { left: 215, top: 380},
+            { left: 230, top: 415 },
+            { left: 240, top: 455 },
+            { left: 275, top: 470 },
+            { left: 300, top: 500 },
+            { left: 355, top: 560 },
+            { left: 400, top: 690 },
+            { left: 465, top: 700 },
+            { left: 485, top: 780 },
+            { left: 590, top: 790 },
+            { left: 250, top: 480 },
+            { left: 600, top: 820 }
         ];
 
         botones.forEach((btn, i) => {
