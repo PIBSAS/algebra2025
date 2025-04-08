@@ -110,8 +110,8 @@ iframe.d {
 
 @media (max-width: 720px) {
     .index-page h1 {
-      top: 0vh;
-        font-size: 1.5em;
+        top: 0vh;
+        font-size: 4vw;
         padding: 0.5em;
     }
 }
