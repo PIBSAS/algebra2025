@@ -21,14 +21,14 @@ document.addEventListener("DOMContentLoaded", function() {
             { left: 242, top: 360},
             { left: 273, top: 410 },
             { left: 310, top: 455 },
-            { left: 337, top: 495 },
+            { left: 337, top: 525 },
             { left: 355, top: 580 },
             { left: 390, top: 640 },
             { left: 425, top: 695 },
             { left: 465, top: 745 },
             { left: 485, top: 795 },
             { left: 590, top: 820 },
-            { left: 383, top: 530 },
+            { left: 383, top: 580 },
             { left: 600, top: 880 }
         ];
 
