@@ -16,10 +16,10 @@ document.addEventListener("DOMContentLoaded", function() {
         const botones = document.querySelectorAll(".index-page .button");
         const coordsMovil = [
             { left: 60, top: 257 },
-            { left: 190, top: 240 },
-            { left: 300, top: 700 },
-            { left: 340, top: 600 },
-            { left: 380, top: 480 },
+            { left: 180, top: 240 },
+            { left: 200, top: 235 },
+            { left: 240, top: 270 },
+            { left: 280, top: 480 },
             { left: 400, top: 400 },
             { left: 430, top: 390 },
             { left: 120, top: 950 },
@@ -27,7 +27,9 @@ document.addEventListener("DOMContentLoaded", function() {
             { left: 300, top: 700 },
             { left: 340, top: 600 },
             { left: 380, top: 480 },
-            { left: 400, top: 400 }
+            { left: 400, top: 400 },
+            { left: 410, top: 430 },
+            { left: 420, top: 480 }
         ];
 
         botones.forEach((btn, i) => {
