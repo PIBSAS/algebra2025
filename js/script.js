@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
             { left: 465, top: 745 },
             { left: 485, top: 795 },
             { left: 590, top: 820 },
-            { left: 340, top: 530 },
+            { left: 383, top: 530 },
             { left: 600, top: 880 }
         ];
 
