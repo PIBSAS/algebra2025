@@ -17,19 +17,19 @@ document.addEventListener("DOMContentLoaded", function() {
         const coordsMovil = [
             { left: 60, top: 257 },
             { left: 180, top: 240 },
-            { left: 205, top: 275 },
-            { left: 210, top: 295 },
-            { left: 215, top: 315 },
-            { left: 225, top: 335 },
-            { left: 235, top: 315 },
-            { left: 255, top: 650 },
-            { left: 255, top: 350 },
-            { left: 270, top: 360 },
-            { left: 276, top: 400 },
-            { left: 285, top: 430 },
-            { left: 290, top: 450 },
-            { left: 295, top: 480 },
-            { left: 520, top: 500 }
+            { left: 210, top: 275 },
+            { left: 215, top: 300},
+            { left: 230, top: 315 },
+            { left: 240, top: 355 },
+            { left: 245, top: 370 },
+            { left: 250, top: 410 },
+            { left: 255, top: 430 },
+            { left: 270, top: 460 },
+            { left: 276, top: 500 },
+            { left: 285, top: 530 },
+            { left: 290, top: 560 },
+            { left: 250, top: 380 },
+            { left: 520, top: 1300 }
         ];
 
         botones.forEach((btn, i) => {
