@@ -22,13 +22,13 @@ document.addEventListener("DOMContentLoaded", function() {
             { left: 273, top: 410 },
             { left: 310, top: 455 },
             { left: 337, top: 520 },
-            { left: 355, top: 580 },
-            { left: 390, top: 640 },
-            { left: 425, top: 695 },
-            { left: 465, top: 745 },
-            { left: 485, top: 795 },
-            { left: 611, top: 787 },
-            { left: 384, top: 580 },
+            { left: 400, top: 612 },
+            { left: 433, top: 656 },
+            { left: 476, top: 702 },
+            { left: 501, top: 778 },
+            { left: 575, top: 845 },
+            { left: 612, top: 787 },
+            { left: 384, top: 568 },
             { left: 564, top: 880 }
         ];
 
