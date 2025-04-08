@@ -96,7 +96,7 @@ iframe.d {
 
 .index-page h1 {
     position: absolute;
-    top: 2vh;
+    top: -3vh;
     left: 50%;
     transform: translateX(-50%);
     margin: 0;
