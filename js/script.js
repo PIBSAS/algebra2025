@@ -16,20 +16,20 @@ document.addEventListener("DOMContentLoaded", function() {
         const botones = document.querySelectorAll(".index-page .button");
         const coordsMovil = [
             { left: 60, top: 257 },
-            { left: 180, top: 240 },
-            { left: 210, top: 290 },
-            { left: 220, top: 335},
-            { left: 230, top: 380 },
-            { left: 260, top: 415 },
+            { left: 180, top: 250 },
+            { left: 210, top: 300 },
+            { left: 220, top: 355},
+            { left: 230, top: 400 },
+            { left: 260, top: 435 },
             { left: 280, top: 460 },
-            { left: 355, top: 560 },
-            { left: 390, top: 620 },
-            { left: 425, top: 680 },
-            { left: 465, top: 720 },
+            { left: 355, top: 570 },
+            { left: 390, top: 640 },
+            { left: 425, top: 700 },
+            { left: 465, top: 740 },
             { left: 490, top: 780 },
-            { left: 590, top: 790 },
-            { left: 340, top: 525 },
-            { left: 610, top: 845 }
+            { left: 590, top: 810 },
+            { left: 340, top: 510 },
+            { left: 610, top: 855 }
         ];
 
         botones.forEach((btn, i) => {
