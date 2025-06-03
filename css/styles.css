@@ -165,6 +165,7 @@ iframe.d {
 .index-page #btn13 { left: calc(1432 / 1920 * 100vw); top: calc(712 / 1080 * 100vh); }
 .index-page #btn14 { left: calc(954 / 1920 * 100vw); top: calc(263 / 1080 * 100vh); }
 .index-page #btn15 { left: calc(1695 / 1920 * 100vw); top: calc(740 / 1080 * 100vh); }
+.index-page #btn16 { left: calc(800 / 1920 * 100vw); top: calc(600 / 1080 * 100vh); }
 
 .redu {
   border-radius: 15px;
