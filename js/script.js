@@ -29,7 +29,8 @@ document.addEventListener("DOMContentLoaded", function() {
             { left: 575, top: 845 },
             { left: 612, top: 787 },
             { left: 384, top: 568 },
-            { left: 341, top: 1299 }
+            { left: 341, top: 1299 },
+            { left: 400, top: 1380 }
         ];
 
         botones.forEach((btn, i) => {
