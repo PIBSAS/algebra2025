@@ -1,13 +1,18 @@
 document.addEventListener("DOMContentLoaded", function() {
     const enlaces = {
         con: "https://campusvirtual.unm.edu.ar/moodle/mod/forum/view.php?id=365957",
-        Geo: "https://www.geogebra.org/classic?lang=es",
-        Req: "https://drive.google.com/file/d/1OjLunEFZ8VwrUmWhlOEmdlTYVoPUjepR/view?usp=sharing"
+        Geo: "https://www.geogebra.org/classic",
+        Req: "https://drive.google.com/file/d/1OjLunEFZ8VwrUmWhlOEmdlTYVoPUjepR/view?usp=sharing",
+        downgeo: "https://geogebra.github.io/docs/reference/en/GeoGebra_Installation/",
+        trid: "https://www.geogebra.org/classic#3d",
+        hoja: "https://www.geogebra.org/classic#spreadsheet"
     };
 
     Object.keys(enlaces).forEach(clase => {
         document.querySelectorAll(`.${clase}`).forEach(elemento => {
             elemento.href = enlaces[clase];
+            elemento.target = "_blank";
+            elemento.rel = "noopener noreferrer";
         });
     });
 
