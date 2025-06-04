@@ -80,11 +80,11 @@
         <section id="deslizador">
             <h2>Cómo crear variables</h2>
             <p>Una variable es un dato que puede cambiar, en GeoGebra estos se materializan mediante los deslizadores/slider. Más allá que existe el comando, tenemos una forma muy simple de crearlos, madiante la barra de entrada:</p>
-            <p>Ingresamos <code>a</code> pulsamos <code>Enter</code> y nos preguntará si deseamos crearlo en Geo 5, en Geo 6 lo crea directamente, indicamos que si, luego podemos hacer clic derecho \( \rightarrow \) Propiedades y Ajustarlo a nuestras necesidades. Debemos tener en cuenta que existen ciertas palabras reservadas que no podemos utilizar:</p>
+            <p>Ingresamos <code class="language-javascript">a </code> pulsamos <code class="language-javascript"> Enter</code> y nos preguntará si deseamos crearlo en Geo 5, en Geo 6 lo crea directamente, indicamos que si, luego podemos hacer clic derecho \( \rightarrow \) Propiedades y Ajustarlo a nuestras necesidades. Debemos tener en cuenta que existen ciertas palabras reservadas que no podemos utilizar:</p>
             <ul>
-                <li><code class="language-javascript">e </code> El número de Euler.</li>
-                <li><code class="language-javascript">i </code> La Unidad Imaginaria.</li>
-                <li><code class="language-javascript">t </code> Es tomada como una variable alternativa a \(x\).</li>
+                <li><code class="language-javascript"> e </code> El número de Euler.</li>
+                <li><code class="language-javascript"> i </code> La Unidad Imaginaria.</li>
+                <li><code class="language-javascript"> t </code> Es tomada como una variable alternativa a \(x\).</li>
                 <li><code class="language-javascript"> x, y, z </code> Los ejes.</li>
             </ul>
             <p>Debemos tener en cuenta que se pueden usar mayúsculas, subíndices, ciertas letras griegas y que en la vista 3D los deslizadores no se muestran, siempre estarán en la vista gráfica, aunque los usemos en 3D.</p>
@@ -105,9 +105,9 @@
                 <li><code class="language-javascript"> P=(x, y) </code> en \(\mathbb{R}^2\)</li>
                 <li><code class="language-javascript"> B=(x, y, z) </code> en \(\mathbb{R}^3\)</li>
 
-                <p><strong>Mediante comando <code class="language-javascript">Punto(&lt;Objeto&gt;)</code> o <code class="language-javascript">Point(&lt;Object&gt;)</code></strong></p>
-                <li><code class="language-javascript">Punto(x, y)</code> en \(\mathbb{R}^2\)</li>
-                <li><code class="language-javascript">Point(x, y, z)</code> en \(\mathbb{R}^3\)</li>
+                <p><strong>Mediante comando <code class="language-javascript"> Punto(&lt;Objeto&gt;) </code> o <code class="language-javascript"> Point(&lt;Object&gt;) </code></strong></p>
+                <li><code class="language-javascript"> Punto(x, y) </code> en \(\mathbb{R}^2\)</li>
+                <li><code class="language-javascript"> Point(x, y, z) </code> en \(\mathbb{R}^3\)</li>
 
                 <p>Tener en cuenta que también podemos asignar un nombre usando el comando, pero también que el punto no se podrá mover como si lo hace el método sencillo. El Objeto que estamos indicando es una Lista</p>
                 <video class="yt">https://youtu.be/UHCb1O_kKss</video>
@@ -123,14 +123,14 @@
                 <li><code class="language-javascript"> u=(x, y) </code> en \(\mathbb{R}^2\)</li>
                 <li><code class="language-javascript"> v=(x, y, z) </code> en \(\mathbb{R}^3\)</li>
 
-                <p><strong>Mediante comando <code class="language-javascript">Vector(&lt;Punto&gt;)</code>:</strong></p>
-                <li><code class="language-javascript"> Vector( (x, y) ) </code> en \(\mathbb{R}^2\)</li>
-                <li><code class="language-javascript"> Vector( (x, y, z) ) </code> en \(\mathbb{R}^3\)</li>
+                <p><strong>Mediante comando <code class="language-javascript"> Vector(&lt;Punto&gt;) </code>:</strong></p>
+                <li><code class="language-javascript"> Vector((x, y)) </code> en \(\mathbb{R}^2\)</li>
+                <li><code class="language-javascript"> Vector((x, y, z)) </code> en \(\mathbb{R}^3\)</li>
                 <p>Notar que el Punto se ingresa entre parentesis y se está omitiendo el punto de inicio del vector que es el Origen que se puede indicar con la Mayúscula \( O \) o \( (0,0)\) ya que un vector es conformado mediante la resta de 2 puntos. Además también podemos asignarle un nombre especifico con una letra minúscula.</p>
 
-                <p><strong>Mediante comando <code class="language-javascript"> Vector(&lt;Punto\ inicial&gt;, &lt;Punto\ final&gt;) </code> cuando el vector no comienza en el origen:</strong></p>
-                <li><code class="language-javascript"> Vector( (a,b),(x, y) ) </code> en \(\mathbb{R}^2\)</li>
-                <li><code class="language-javascript"> Vector( (a, b, c),(x, y, z) ) </code> en \(\mathbb{R}^3\)</li>
+                <p><strong>Mediante comando <code class="language-javascript"> Vector(&lt;Punto inicial&gt;, &lt;Punto final&gt;) </code> cuando el vector no comienza en el origen:</strong></p>
+                <li><code class="language-javascript"> Vector((a, b), (x, y)) </code> en \(\mathbb{R}^2\)</li>
+                <li><code class="language-javascript"> Vector((a, b, c), (x, y, z)) </code> en \(\mathbb{R}^3\)</li>
                 
                 <video class="yt">https://youtu.be/9rz59CQIwVc</video>
                 
@@ -140,23 +140,23 @@
 
         <section id="recta">
             <h2>Cómo Crear Rectas</h2>
-            <p>Cómo sabemos de la teoría, para crear una recta necesitamos un vector director y un punto de paso, por lo tanto, podemos generarla declarando ambos, y usando el comando <code class="language-javascript">Line(&lt;Point&gt;,&lt;Vector&gt;)</code> o <code class="language-javascript">Recta(&lt;Punto&gt;,&lt;Vector&gt;)</code></p>
+            <p>Cómo sabemos de la teoría, para crear una recta necesitamos un vector director y un punto de paso, por lo tanto, podemos generarla declarando ambos, y usando el comando <code class="language-javascript"> Line(&lt;Point&gt;, &lt;Vector&gt;) </code> o <code class="language-javascript"> Recta(&lt;Punto&gt;, &lt;Vector&gt;) </code></p>
 
             <ul>
                 <p><strong>Forma simple</strong></p>
-                <li>Generamos el punto: <code class="language-javascript"> (1,3) </code></li>
-                <li>Generamos el vector: <code class="language-javascript"> u=(2,7) </code></li>
-                <li>Generamos la Recta: <code class="language-javascript"> Recta(A,u) </code></li>
+                <li>Generamos el punto: <code class="language-javascript"> (1, 3) </code></li>
+                <li>Generamos el vector: <code class="language-javascript"> u=(2, 7) </code></li>
+                <li>Generamos la Recta: <code class="language-javascript"> Recta(A, u) </code></li>
 
                 
-                <p><strong>Forma compacta pero no veremos ni el punto ni el vector</strong></p>
-                <li>Generamos la Recta: <code class="language-javascript"> Recta((1,3),Vector((2,7))) </code></li>
+                <p><strong>Forma compacta pero no veremos ni el punto, ni el vector</strong></p>
+                <li>Generamos la Recta: <code class="language-javascript"> Recta((1, 3), Vector((2, 7))) </code></li>
 
                 
                 <p><strong>Forma Alternativa</strong></p>
                 <li>Generamos el punto: <code class="language-javascript"> A=(1,3) </code></li>
                 <li>Generamos el vector: <code class="language-javascript"> u=(2,7) </code></li>
-                <li>Generamos la Recta: <code class="language-javascript"> L(\alpha)=A + \alpha \cdot u </code></li>
+                <li>Generamos la Recta: <code class="language-javascript"> \( L(\alpha)=A + \alpha \cdot u\) </code></li>
             </ul>
             <p>Tener en cuenta que es igual en \( \mathbb{R}^3 \)</p>
         </section>
@@ -167,16 +167,16 @@
             <p>En forma General o implícita <code class="language-javascript">ax + by + cz = d</code></p>
             <ul>
                 <p><strong>Forma Paramétrica</strong></p>
-                <li>Generamos el punto: <code class="language-javascript"> (1,3,1) </code></li>
-                <li>Generamos el vector : <code class="language-javascript"> u=(2,7,1) </code></li>
-                <li>Generamos el vector : <code class="language-javascript"> v=(3,2,0) </code></li>
+                <li>Generamos el punto: <code class="language-javascript"> (1, 3, 1) </code></li>
+                <li>Generamos el vector : <code class="language-javascript"> u=(2, 7, 1) </code></li>
+                <li>Generamos el vector : <code class="language-javascript"> v=(3, 2, 0) </code></li>
                 <li>Generamos el Plano: <code class="language-javascript"> Plano(A, u, v) </code></li>
         
                 <p><strong>Forma compacta pero no veremos ni el punto ni los vectores</strong></p>
-                <li>Generamos el Plano: <code class="language-javascript">Plano((1,3,1),Vector((2,7,1)), Vector((3, 2, 0)))</code></li>
+                <li>Generamos el Plano: <code class="language-javascript"> Plano((1, 3, 1), Vector((2, 7, 1)), Vector((3, 2, 0))) </code></li>
 
                 <p><strong>Forma Implícita</strong></p>
-                <li>Generamos el Plano: <code class="language-javascript"> 2x+3y+4z=5 </code></li>
+                <li>Generamos el Plano: <code class="language-javascript"> 2x + 3y + 4z = 5 </code></li>
             </ul>
         </section>
 
@@ -185,8 +185,8 @@
             <p>En este caso se explicara solo la forma simple, en la que creamos una matriz a traves de una lista de listas.Si asignamos nombre podemos elegir mayúsculas, sino Geogebra las nombra \(mn\), en minúscula. </p>
             <ul>
                 <p><strong>Forma simple</strong></p>
-                <li>Generamos la matriz: <code class="language-javascript"> {{2,3},{1,1}} </code></li>
-                <li>Generamos la matriz asignandole un nombre:<code class="language-javascript">A={{1,2,3,4,5},{5,4,3,2,1},{4,4,3,3,2}}</code></li>
+                <li>Generamos la matriz: <code class="language-javascript"> {{2, 3}, {1, 1}} </code></li>
+                <li>Generamos la matriz asignandole un nombre:<code class="language-javascript"> A = {{1,2,3,4,5}, {5,4,3,2,1}, {4,4,3,3,2}} </code></li>
             </ul></p>
         </section>
 
@@ -196,7 +196,7 @@
 
 </body>
 <footer class="footer">
-    <a href="../../assets/libro6.html" class="arrow arrow-left" aria-label="Libro 6">
+    <a href="../../assets/seg/libro6.html" class="arrow arrow-left" aria-label="Libro 6">
       <div class="line one">
           <div class="round"></div>
           <div class="round"></div>
@@ -248,7 +248,7 @@
       </div> 
     </a>
   
-    <a href="../../assets/seg/libro1.html" class="arrow arrow-right" aria-label="Libro 1 Segundo Cuatrimestre">
+    <a href="../../assets/libro1.html" class="arrow arrow-right" aria-label="Libro 1 Primer Cuatrimestre">
       <div class="line one">
           <div class="round"></div>
           <div class="round"></div>
