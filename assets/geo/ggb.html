@@ -164,20 +164,20 @@
 
         <section id="plano">
             <h2>Cómo Crear Planos</h2>
-            <p>Cómo sabemos de la teoría, para crear un plano en su Forma paramétrica necesitamos dos vectores directores y un punto de paso, por lo tanto, podemos generarla declarando ambos, y usando el comando \(Plane(&lt;Point&gt;,&lt;Vector&gt;,&lt;Vector&gt;)\) o \(Plano(&lt;Punto&gt;,&lt;Vector&gt;,&lt;Vector&gt;)\)</p>
-            <p>En forma General o implícita \(ax + by + cz = d\)</p>
+            <p>Cómo sabemos de la teoría, para crear un plano en su Forma paramétrica necesitamos dos vectores directores y un punto de paso, por lo tanto, podemos generarla declarando ambos, y usando el comando <code class="language-javascript">Plane(&lt;Point&gt;,&lt;Vector&gt;,&lt;Vector&gt;)</code> o <code class="language-javascript">Plano(&lt;Punto&gt;,&lt;Vector&gt;,&lt;Vector&gt;)</code></p>
+            <p>En forma General o implícita <code class="language-javascript">ax + by + cz = d</code></p>
             <ul>
                 <p><strong>Forma Paramétrica</strong></p>
-                <li>Generamos el punto: \( (1,3,1) \)</li>
-                <li>Generamos el vector : \( u=(2,7,1) \)</li>
-                <li>Generamos el vector : \( v=(3,2,0) \)</li>
-                <li>Generamos el Plano: \( Plano(A, u, v) \)</li>
+                <li>Generamos el punto: <code class="language-javascript"> (1,3,1) </code></li>
+                <li>Generamos el vector : <code class="language-javascript"> u=(2,7,1) </code></li>
+                <li>Generamos el vector : <code class="language-javascript"> v=(3,2,0) </code></li>
+                <li>Generamos el Plano: <code class="language-javascript"> Plano(A, u, v) </code></li>
         
                 <p><strong>Forma compacta pero no veremos ni el punto ni los vectores</strong></p>
-                <li>Generamos el Plano: \( Plano( (1,3,1),Vector((2,7,1)), Vector((3, 2, 0)) ) \)</li>
+                <li>Generamos el Plano: <code class="language-javascript">Plano((1,3,1),Vector((2,7,1)), Vector((3, 2, 0))) <code></code></li>
 
                 <p><strong>Forma Implícita</strong></p>
-                <li>Generamos el Plano: \( 2x+3y+4z=5 \)</li>
+                <li>Generamos el Plano: <code class="language-javascript"> 2x+3y+4z=5 </code></li>
             </ul>
         </section>
 
@@ -186,8 +186,8 @@
             <p>En este caso se explicara solo la forma simple, en la que creamos una matriz a traves de una lista de listas.Si asignamos nombre podemos elegir mayúsculas, sino Geogebra las nombra \(mn\), </p>
             <ul>
                 <p><strong>Forma simple</strong></p>
-                <li>Generamos la matriz: <pre><code class="language-javascript"> {{2,3},{1,1}} </code></pre></li>
-                <li>Generamos la matriz asignandole un nombre:  A={ {1,2,3,4,5},{5,4,3,2,1},{4,4,3,3,2} } </li>
+                <li>Generamos la matriz: <code class="language-javascript"> {{2,3},{1,1}} </code></li>
+                <li>Generamos la matriz asignandole un nombre:<code class="language-javascript">A={{1,2,3,4,5},{5,4,3,2,1},{4,4,3,3,2}}</code></li>
             </ul></p>
         </section>
 
