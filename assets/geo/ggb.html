@@ -10,9 +10,12 @@
     <link rel="manifest" href="../../assets/site.webmanifest">
     <link rel="stylesheet" href="../../css/styles.css">
     <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/styles/github.min.css">
     <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/videojs-youtube/dist/Youtube.min.js"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/lib/highlight.min.js"></script>
+
 </head>
 <body>
     <header>
@@ -183,13 +186,19 @@
             <p>En este caso se explicara solo la forma simple, en la que creamos una matriz a traves de una lista de listas.Si asignamos nombre podemos elegir mayúsculas, sino Geogebra las nombra \(mn\), </p>
             <ul>
                 <p><strong>Forma simple</strong></p>
-                <li>Generamos la matriz: \( {{2,3},{1,1}} \)</li>
+                <li>Generamos la matriz: <pre><code class="language-javascript"> {{2,3},{1,1}} </code></pre></li>
                 <li>Generamos la matriz asignandole un nombre: \( A={ {1,2,3,4,5},{5,4,3,2,1},{4,4,3,3,2} } \)</li>
             </ul></p>
         </section>
 
     </main>
     <script src="../../js/script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            hljs.highlightAll();
+        });
+    </script>
+
 </body>
 <footer class="footer">
     <a href="../../assets/libro6.html" class="arrow arrow-left" aria-label="Libro 6">
