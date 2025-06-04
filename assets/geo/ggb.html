@@ -83,10 +83,10 @@
             <p>Una variable es un dato que puede cambiar, en GeoGebra estos se materializan mediante los deslizadores/slider. Más alláa que existe el comando, tenemos una forma muy simple de crearlos, madiante la barra de entrada:</p>
             <p>Ingresamos \( a \) pulsamos \( Enter \) y nos preguntará si deseamos crearlo en Geo 5, en Geo 6 lo crea directamente, indicamos que si, luego podemos hacer clic derecho \( \rightarrow \) Propiedades y Ajustarlo a nuestras necesidades. Debemos tener en cuenta que existen ciertas palabras reservadas que no podemos utilizar:</p>
             <ul>
-                <li>\(e \) El número de Euler</li>
-                <li>\(i \) La Unidad Imaginaria</li>
-                <li>\(t \) Es tomada como una variable alternativa a \(x\)</li>
-                <li>\( x, y, z \) Los ejes</li>
+                <li>\(e \) El número de Euler.</li>
+                <li>\(i \) La Unidad Imaginaria.</li>
+                <li>\(t \) Es tomada como una variable alternativa a \(x\).</li>
+                <li>\( x, y, z \) Los ejes.</li>
             </ul>
             <p>Debemos tener en cuenta que se pueden usar mayúsculas, subíndices, ciertas letras griegas y que en la vista 3D los deslizadores no se muestran, siempre estarán en la vista gráfica, aunque los usemos en 3D.</p>
             <video class="yt">https://youtu.be/n0yfwIXE4vU</video>
@@ -98,15 +98,18 @@
             <p>Los puntos están conformados por componentes según su dimensión, pero en GeoGebra usamos \(\mathbb{R}^2\) y \(\mathbb{R}^3\). Los puntos se crean fácilmente encerrando entre parentesís las componentes y opcionalmente podemos asignarle un nombre que será con una letra en Mayúscula:</p>
 
             <ul>
-                <p><strong>Forma simple</strong></p>
+                <p><strong>Forma simple:</strong></p>
                 <li>\( (x, y) \) en \(\mathbb{R}^2\)</li>
                 <li>\( (x, y, z) \) en \(\mathbb{R}^3\)</li>
-                <p><strong>Asignando nombre al punto</strong></p>
+
+                <p><strong>Asignando nombre al punto:</strong></p>
                 <li>\( P=(x, y) \) en \(\mathbb{R}^2\)</li>
                 <li>\( B=(x, y, z) \) en \(\mathbb{R}^3\)</li>
-                <p><strong>Mediante comando \( Punto(&lt;Objeto&gt;) \) o \( Point(&lt;Object&gt;) \)</strong></p>
+
+                <p><strong>Mediante comando \( Punto(&lt;Objeto&gt;) \) o \( Point(&lt;Object&gt;) \):</strong></p>
                 <li>\( Punto(x, y) \) en \(\mathbb{R}^2\)</li>
                 <li>\( Point(x, y, z) \) en \(\mathbb{R}^3\)</li>
+
                 <p>Tener en cuenta que también podemos asignar un nombre usando el comando, pero también que el punto no se podrá mover como si lo hace el método sencillo. El Objeto que estamos indicando es una Lista</p>
                 <video class="yt">https://youtu.be/UHCb1O_kKss</video>
                 <p align="center"><a href="https://geogebra.github.io/docs/manual/en/commands/Point/" target="_blank">Comando Punto</a></p>
@@ -115,10 +118,24 @@
 
         <section id="vector">
             <h2>Cómo crear vectores</h2>
-            <p>¿Es posible extender la idea de determinante a matrices de otros tamaños? El profesor Daniel nos lo cuenta en el siguiente video:</p>
+            <p>Los vectores a diferencia de los puntos, se les debe asignar un nombre pero con minúsculas.</p>
             <ul>
-                <li><a href="https://www.youtube.com/watch?v=LPOlr4zJAgk" target="_blank">Video sobre determinantes de matrices de \( n \times n \)</a></li>
-                <video class="yt">https://www.youtube.com/watch?v=LPOlr4zJAgk</video>
+                <p><strong>Forma simple:</strong></p>
+                <li>\( u=(x, y) \) en \(\mathbb{R}^2\)</li>
+                <li>\( v=(x, y, z) \) en \(\mathbb{R}^3\)</li>
+
+                <p><strong>Mediante comando \( Vector(&lt;Punto&gt;) \):</strong></p>
+                <li>\( Vector( (x, y) ) \) en \(\mathbb{R}^2\)</li>
+                <li>\( Vector( (x, y, z) ) \) en \(\mathbb{R}^3\)</li>
+                <p>Notar que el Punto se ingresa entre parentesis y se está omitiendo el punto de inicio del vector que es el Origen que se puede indicar con la Mayúscula \( O \) o \( (0,0)\) ya que un vector es conformado mediante la resta de 2 puntos. Además también podemos asignarle un nombre especifico con una letra minúscula.</p>
+
+                <p><strong>Mediante comando \( Vector(&lt;Punto inicial&gt;, (&lt;Punto final&gt;) \) cuando el vector no comienza en el origen:</strong></p>
+                <li>\( Vector( (a,b),(x, y) ) \) en \(\mathbb{R}^2\)</li>
+                <li>\( Vector( (a, b, c),(x, y, z) ) \) en \(\mathbb{R}^3\)</li>
+                
+                <video class="yt">https://youtu.be/9rz59CQIwVc</video>
+                
+                <li><a href="https://geogebra.github.io/docs/manual/es/commands/Vector/" target="_blank">Comando Vector</a></li>
             </ul>
         </section>
 
