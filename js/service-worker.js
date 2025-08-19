@@ -9,14 +9,13 @@ const urlsToCache = [
 ];
 
 for (let i = 1; i <= 7; i++) {
-  urlsToCache.push(`/algebra2025/assets/libro${i}.html`);
+  urlsToCache.push(`/algebra2025/assets/libro${i}`);
 }
 
 for (let i = 1; i <= 6; i++) {
-  urlsToCache.push(`/algebra2025/assets/seg/libro${i}.html`);
+  urlsToCache.push(`/algebra2025/assets/seg/libro${i}`);
 }
 
-// Instalar y cachear archivos iniciales
 self.addEventListener("install", (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
@@ -25,7 +24,6 @@ self.addEventListener("install", (event) => {
   );
 });
 
-// Activar y limpiar cachés viejos
 self.addEventListener("activate", (event) => {
   event.waitUntil(
     caches.keys().then((cacheNames) =>
@@ -40,7 +38,6 @@ self.addEventListener("activate", (event) => {
   );
 });
 
-// Interceptar peticiones y responder con caché si existe
 self.addEventListener("fetch", (event) => {
   event.respondWith(
     caches.match(event.request).then((response) => {
