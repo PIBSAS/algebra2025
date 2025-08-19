@@ -35,5 +35,12 @@
     </main>
 
     <script src="js/script.js"></script>
+    <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("/algebra2025/js/service-worker.js", { scope: "/algebra2025/" })
+        .then(() => console.log("✅ Service Worker registrado con alcance /algebra2025/"))
+        .catch((err) => console.log("❌ Error registrando SW:", err));
+    }
+    </script>
 </body>
 </html>
