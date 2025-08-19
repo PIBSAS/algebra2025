@@ -2,11 +2,19 @@ const CACHE_NAME = "algebra-2025-cache-v1";
 const urlsToCache = [
   "/algebra2025/",
   "/algebra2025/index.html",
-  "/algebra2025/styles.css",
-  "/algebra2025/script.js",
-  "/algebra2025/android-chrome-192x192.png",
-  "/algebra2025/android-chrome-512x512.png"
+  "/algebra2025/css/styles.css",
+  "/algebra2025/js/script.js",
+  "/algebra2025/assets/android-chrome-192x192.png",
+  "/algebra2025/assets/android-chrome-512x512.png"
 ];
+
+for (let i = 1; i <= 7; i++) {
+  urlsToCache.push(`/algebra2025/assets/libro${i}.html`);
+}
+
+for (let i = 1; i <= 6; i++) {
+  urlsToCache.push(`/algebra2025/assets/seg/libro${i}.html`);
+}
 
 // Instalar y cachear archivos iniciales
 self.addEventListener("install", (event) => {
