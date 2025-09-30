@@ -39,7 +39,7 @@
                         </ul>
                     </li>
                     <li>7. <a href="#autoevaluacion">Ejercitación y Autoevaluación</a></li>
-                    <li>8. <a href="#archivos" target="_blank">Archivos Completos</a></li>
+                    <li>8. <a href="#archivos">Archivos Completos</a></li>
                 </ul>
         </section>
 
@@ -127,7 +127,7 @@
             <p>En esta sección abordaremos algunas propiedades de las transformaciones lineales. En particular, veremos que con conocer las imágenes de "algunos" vectores del dominio podremos tener las imágenes de todos los vectores del dominio. Esto quiere decir que con "algunos pocos" datos, podemos conocer a toda la transformación lineal.</p>
         </section>
 
-        <section id="#nucleo">
+        <section id="nucleo">
             <h2>6.1. Núcleo de \( T \)</h2>
             <p>En primer lugar, notemos que en cualquier transformación lineal \( T:\mathbb{R}^n\to\mathbb{R}^m \) ocurre que el transformado del vector nulo de \( \mathbb{R}^n \) es el vector nulo de \( \mathbb{R}^m \). Es decir, que \( T(\vec{0})=\vec{0} \). Esto se deduce en un renglón a partir de una de las dos propiedades iniciales que definen a las transformaciones lineales y teniendo en cuenta que el vector nulo es igual al número \( 0 \) multiplicado por cualquier vector.</p>
             <p>¿Es el vector nulo el único vector del dominio de \( T \) que se transforma en el nulo? La respuesta es... depende de la transformación. En algunos casos sí, en otros no. Hay ejemplos de transformaciones lineales en las que existen otros vectores cuyo transformado es el nulo. Por ejemplo, si pensamos en una proyección ortogonal de \( \mathbb{R}^3 \) en \( \mathbb{R}^3 \) con respecto al plano \( \pi:x-z=0 \). Es decir, cualquier punto del espacio se transforma en un punto sobre el plano \( \pi \) de modo que el segmento que une al vector y su transformado es perpendicular al plano. ¿Quiénes son los vectores que se transforman en el nulo? O sea, ¿cuáles puntos del espacio que se proyectan perpendicularmente al plano van a parar al origen? Piénsenlo... Bueno... lo decimos... Cualquier punto que esté sobre la recta perpendicular al plano por el origen, en definitiva, cualquier vector perpendicular al plano, se proyecta sobre el vector nulo. En este ejemplo, esta transformación puede definirse así (pueden intentar buscarla, para ello tengan en cuenta que cualquier vector del plano se transforma en sí mismo):</p>
@@ -140,7 +140,7 @@
             <p>Sea \( T:\mathbb{R}^n\to\mathbb{R}^m \) una transformación lineal. \( Nu(T) = \left\{ \vec{v} \in \mathbb{R}^n : T( \vec{v} ) = \vec{0}  \right\} \)</p>
         </section>
 
-        <section id="#imagen">
+        <section id="imagen">
                 <h2>6.2. Imagen de \( T \)</h2>
                 <p>Por otro lado, notemos que en el ejemplo de la proyección con el que venimos trabajando, no todos los vectores del espacio son obtenidos como imagen de algún vector del dominio. Puede resultar intuitivo que como se trata de una proyección sobre un plano, todos los transformados obtenidos serán vectores del plano, y entonces, no se podrán obtener vectores que no están en él. Pueden comprobar qué sucede si intentamos buscar una preimagen del vector \( (1,2,3) \). En el libro anterior, en el apartado ¿Cómo hallamos una preimagen? pueden revisar cómo hacerlo.</p>
                 <br>
@@ -150,7 +150,7 @@
                 <p>A la imagen también se la suele llamar Recorrido de \( T \) y lo notamos \( Im(T) \).</p>
         </section>
 
-        <section id="#espacios">
+        <section id="espacios">
                 <h2>6.3. Núcleo e Imagen de una TL son espacioes vectoriales</h2>
                 <p>Notemos que buscar el núcleo de una transformación lineal implica resolver un sistema de ecuaciones lineales homogéno. En el apartado <strong>Algunas propiedades de las soluciones de un sistema homogéneo de <a href="https://pibsas.github.io/algebra2025/assets/seg/libro1#propiedades" target="_blank">Libro 1</a></strong> vimos que las soluciones de los sistemas homogéneos cumplen con las propiedades que caracterizan a los espacios vectoriales y que mencionamos en el apartado <strong>Propiedades de un Espacio Vectorial del <a href="https://pibsas.github.io/algebra2025/assets/seg/libro2#propiedades" target="_blank">Libro 2</a></strong>. En definitiva, el Núcleo de cualquier transformación lineal es un espacio vectorial (es un subespacio vectorial de \( \mathbb{R}^n \)).</p>
                 <p>Algo similar ocurre con la imagen. Si queremos hallar la imagen de una transformación lineal, según vimos, planteamos al producto de la matriz por el vector genérico del dominio como combinación lineal. Finalmente, tenemos un sistema de generadores de un espacio vectorial. Y podemos plantear una base.</p>
@@ -173,7 +173,7 @@
                 </ul>
         </section>
 
-        <section id="#determinar">
+        <section id="determinar">
             <h2>6.4 ¿Cómo queda determinada una TL?</h2>
             <p>De acuerdo con lo que venimos diciendo, si tanto el Núcleo como la Imagen son espacios vectoriales, ambos quedan completamente caracterizados a partir de una base.</p>
             <p>Además, supongamos que \( B=\left\{ \vec{v_1}, \vec{v_2}, \dots, \vec{v_n}\right\} \) es una base del espacio vectorial \( \mathbb{R}^n \) y \( T:\mathbb{R}^n\to\mathbb{R}^m \)  es una transformación lineal. En caso de que conozcamos las imágenes de los vectores de la base por la la transformación lineal \( T \), es decir, si sabemos que \( T(\vec{v_1})=\vec{w_1}, T(\vec{v_2})=\vec{w_2}, \dots, T(\vec{v_n})=\vec{w_n} \) con cada \( \vec{w_i}\in \mathbb{R}^m \) entonces, conoceremos la imagen de cualquier vector del dominio de \( T \).</p>
@@ -182,7 +182,7 @@
             <p><strong>Es decir, una transformación lineal queda completamente determinada si conocemos las imágenes de los vectores de una base del dominio.</strong></p>
         </section>
 
-        <section id="#dimension">
+        <section id="dimension">
             <h2>6.5. Teorema de la dimensión y caracterización de la solución de los sitemas homogéneos</h2>
             <p>Finalmente, presentamos el teorema de la dimensión que relaciona las dimensiones del dominio, Núcleo e Imagen de la transformación lineal.</p>
             <h3>Teorema de la dimensión</h3>
