@@ -1,3 +1,23 @@
+(function() {
+    const mathjaxURL = "https://cdn.jsdelivr.net/npm/mathjax@4.0.0/tex-mml-chtml.js";
+
+    if (document.getElementById("MathJax-script")) return;
+
+    const script = document.createElement("script");
+    script.id = "MathJax-script";
+    script.async = true;
+    script.src = mathjaxURL;
+
+    const head = document.getElementsByTagName("head")[0];
+    const title = head.querySelector("title");
+
+    if (title) {
+        head.insertBefore(script, title);
+    } else {
+        head.prepend(script);
+    }
+})();
+
 document.addEventListener("DOMContentLoaded", function() {
     const enlaces = {
         con: "https://campusvirtual.unm.edu.ar/moodle/mod/forum/view.php?id=365957",
