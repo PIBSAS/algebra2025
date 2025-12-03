@@ -1,22 +1,60 @@
+// ---------------------------
+// 1) Inyección dinámica MathJax
+// ---------------------------
 (function() {
     const mathjaxURL = "https://cdn.jsdelivr.net/npm/mathjax@4.0.0/tex-mml-chtml.js";
 
-    if (document.getElementById("MathJax-script")) return;
+    if (!document.getElementById("MathJax-script")) {
+        const script = document.createElement("script");
+        script.id = "MathJax-script";
+        script.async = true;
+        script.src = mathjaxURL;
 
-    const script = document.createElement("script");
-    script.id = "MathJax-script";
-    script.async = true;
-    script.src = mathjaxURL;
+        const head = document.head;
+        const title = head.querySelector("title");
 
-    const head = document.getElementsByTagName("head")[0];
-    const title = head.querySelector("title");
-
-    if (title) {
-        head.insertBefore(script, title);
-    } else {
-        head.prepend(script);
+        if (title) {
+            head.insertBefore(script, title);
+        } else {
+            head.prepend(script);
+        }
     }
 })();
+
+
+// ------------------------------------------
+// 2) Inyección dinámica Video.js + YouTube
+// ------------------------------------------
+(function() {
+
+    ["videojs-css", "videojs-core", "videojs-youtube"].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.remove();
+    });
+
+    // CSS de video.js
+    const css = document.createElement("link");
+    css.id = "videojs-css";
+    css.rel = "stylesheet";
+    css.href = "https://vjs.zencdn.net/8.23.4/video-js.css";
+    document.head.appendChild(css);
+
+    // núcleo video.js
+    const core = document.createElement("script");
+    core.id = "videojs-core";
+    core.src = "https://vjs.zencdn.net/8.23.4/video.min.js";
+    core.defer = true;
+    document.head.appendChild(core);
+
+    // plugin YouTube
+    const yt = document.createElement("script");
+    yt.id = "videojs-youtube";
+    yt.src = "https://cdn.jsdelivr.net/npm/videojs-youtube/dist/Youtube.min.js";
+    yt.defer = true;
+    document.head.appendChild(yt);
+
+})();
+
 
 document.addEventListener("DOMContentLoaded", function() {
     const enlaces = {
