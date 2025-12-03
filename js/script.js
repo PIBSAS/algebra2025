@@ -1,6 +1,3 @@
-// ---------------------------
-// 1) Inyección dinámica MathJax
-// ---------------------------
 (function() {
     const mathjaxURL = "https://cdn.jsdelivr.net/npm/mathjax@4.0.0/tex-mml-chtml.js";
 
@@ -22,9 +19,6 @@
 })();
 
 
-// ------------------------------------------
-// 2) Inyección dinámica Video.js + YouTube
-// ------------------------------------------
 (function() {
 
     ["videojs-css", "videojs-core", "videojs-youtube"].forEach(id => {
