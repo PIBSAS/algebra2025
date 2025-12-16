@@ -18,7 +18,7 @@
     }
 })();
 
-
+/*
 (function() {
 
     ["videojs-css", "videojs-core", "videojs-youtube"].forEach(id => {
@@ -46,6 +46,44 @@
     yt.src = "https://cdn.jsdelivr.net/npm/videojs-youtube/dist/Youtube.min.js";
     yt.defer = true;
     document.head.appendChild(yt);
+
+})();
+*/
+(function () {
+
+  // Limpiar si ya existen
+  ["videojs-css", "videojs-core", "videojs-youtube"].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.remove();
+  });
+
+  // CSS
+  const css = document.createElement("link");
+  css.id = "videojs-css";
+  css.rel = "stylesheet";
+  css.href = "https://vjs.zencdn.net/8.23.4/video-js.css";
+  document.head.appendChild(css);
+
+  //Video.js core
+  const core = document.createElement("script");
+  core.id = "videojs-core";
+  core.src = "https://vjs.zencdn.net/8.23.4/video.min.js";
+
+  core.onload = () => {
+    // Plugin YouTube (solo cuando videojs ya existe)
+    const yt = document.createElement("script");
+    yt.id = "videojs-youtube";
+    yt.src = "https://cdn.jsdelivr.net/npm/videojs-youtube@3/dist/Youtube.min.js";
+
+    yt.onload = () => {
+      console.log("Video.js + YouTube cargados correctamente");
+      // acá YA podés inicializar players
+    };
+
+    document.head.appendChild(yt);
+  };
+
+  document.head.appendChild(core);
 
 })();
 
