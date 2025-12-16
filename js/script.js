@@ -17,89 +17,6 @@
         }
     }
 })();
-/*
-(function () {
-
-  ["videojs-css", "videojs-core", "videojs-youtube"].forEach(id => {
-    const el = document.getElementById(id);
-    if (el) el.remove();
-  });
-
-  const css = document.createElement("link");
-  css.id = "videojs-css";
-  css.rel = "stylesheet";
-  css.href = "https://vjs.zencdn.net/8.23.4/video-js.css";
-  document.head.appendChild(css);
-
-  const core = document.createElement("script");
-  core.id = "videojs-core";
-  core.src = "https://vjs.zencdn.net/8.23.4/video.min.js";
-
-  core.onload = () => {
-    const yt = document.createElement("script");
-    yt.id = "videojs-youtube";
-    yt.src = "https://cdn.jsdelivr.net/npm/videojs-youtube@3/dist/Youtube.min.js";
-
-    yt.onload = () => {
-      initYouTubeVideos(); // 🔥 ACÁ, no antes
-    };
-
-    document.head.appendChild(yt);
-  };
-
-  document.head.appendChild(core);
-
-})();
-
-function initYouTubeVideos() {
-
-  const isMobile = window.innerWidth <= 720;
-  const ytVideos = document.querySelectorAll("video.yt");
-
-  ytVideos.forEach((el, index) => {
-
-    const url = el.textContent.trim();
-    if (!url) return;
-
-    const id = `yt-auto-${index}`;
-    el.textContent = "";
-    el.id = id;
-    el.classList.add("video-js", "vjs-default-skin");
-    el.setAttribute("controls", true);
-
-    if (!isMobile) {
-      el.setAttribute("width", "640");
-      el.setAttribute("height", "360");
-    }
-
-    const setup = {
-      techOrder: ["youtube"],
-      sources: [{
-        type: "video/youtube",
-        src: url
-      }],
-      youtube: {
-        modestbranding: 1,
-        rel: 0
-      },
-      ...(isMobile ? { fluid: true, aspectRatio: "16:9" } : {})
-    };
-
-    el.setAttribute("data-setup", JSON.stringify(setup));
-
-    const player = videojs(id);
-    player.ready(function () {
-      const el = this.el();
-      el.style.borderRadius = "16px";
-      el.style.overflow = "hidden";
-
-      const iframe = el.querySelector("iframe");
-      if (iframe) iframe.style.borderRadius = "16px";
-    });
-  });
-}
-*/
-
 
 document.addEventListener("DOMContentLoaded", function() {
     const enlaces = {
@@ -200,3 +117,85 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+/*
+(function () {
+
+  ["videojs-css", "videojs-core", "videojs-youtube"].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.remove();
+  });
+
+  const css = document.createElement("link");
+  css.id = "videojs-css";
+  css.rel = "stylesheet";
+  css.href = "https://vjs.zencdn.net/8.23.4/video-js.css";
+  document.head.appendChild(css);
+
+  const core = document.createElement("script");
+  core.id = "videojs-core";
+  core.src = "https://vjs.zencdn.net/8.23.4/video.min.js";
+
+  core.onload = () => {
+    const yt = document.createElement("script");
+    yt.id = "videojs-youtube";
+    yt.src = "https://cdn.jsdelivr.net/npm/videojs-youtube@3/dist/Youtube.min.js";
+
+    yt.onload = () => {
+      initYouTubeVideos(); 
+    };
+
+    document.head.appendChild(yt);
+  };
+
+  document.head.appendChild(core);
+
+})();
+
+function initYouTubeVideos() {
+
+  const isMobile = window.innerWidth <= 720;
+  const ytVideos = document.querySelectorAll("video.yt");
+
+  ytVideos.forEach((el, index) => {
+
+    const url = el.textContent.trim();
+    if (!url) return;
+
+    const id = `yt-auto-${index}`;
+    el.textContent = "";
+    el.id = id;
+    el.classList.add("video-js", "vjs-default-skin");
+    el.setAttribute("controls", true);
+
+    if (!isMobile) {
+      el.setAttribute("width", "640");
+      el.setAttribute("height", "360");
+    }
+
+    const setup = {
+      techOrder: ["youtube"],
+      sources: [{
+        type: "video/youtube",
+        src: url
+      }],
+      youtube: {
+        modestbranding: 1,
+        rel: 0
+      },
+      ...(isMobile ? { fluid: true, aspectRatio: "16:9" } : {})
+    };
+
+    el.setAttribute("data-setup", JSON.stringify(setup));
+
+    const player = videojs(id);
+    player.ready(function () {
+      const el = this.el();
+      el.style.borderRadius = "16px";
+      el.style.overflow = "hidden";
+
+      const iframe = el.querySelector("iframe");
+      if (iframe) iframe.style.borderRadius = "16px";
+    });
+  });
+}
+*/
