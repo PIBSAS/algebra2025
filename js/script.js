@@ -150,7 +150,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    const ytVideos = document.querySelectorAll("video.yt");*/
+    const ytVideos = document.querySelectorAll("video.yt");
 
     ytVideos.forEach((el, index) => {
         const url = el.textContent.trim();
