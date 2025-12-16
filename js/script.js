@@ -51,33 +51,30 @@
 */
 (function () {
 
-  // Limpiar si ya existen
+  // ---------- CARGA VIDEO.JS ----------
   ["videojs-css", "videojs-core", "videojs-youtube"].forEach(id => {
     const el = document.getElementById(id);
     if (el) el.remove();
   });
 
-  // CSS
   const css = document.createElement("link");
   css.id = "videojs-css";
   css.rel = "stylesheet";
   css.href = "https://vjs.zencdn.net/8.23.4/video-js.css";
   document.head.appendChild(css);
 
-  //Video.js core
   const core = document.createElement("script");
   core.id = "videojs-core";
   core.src = "https://vjs.zencdn.net/8.23.4/video.min.js";
 
   core.onload = () => {
-    // Plugin YouTube (solo cuando videojs ya existe)
     const yt = document.createElement("script");
     yt.id = "videojs-youtube";
     yt.src = "https://cdn.jsdelivr.net/npm/videojs-youtube@3/dist/Youtube.min.js";
 
     yt.onload = () => {
-      console.log("Video.js + YouTube cargados correctamente");
-      // acá YA podés inicializar players
+      console.log("Video.js + YouTube cargados");
+      initYouTubeVideos(); // 🔥 único punto donde se usa videojs()
     };
 
     document.head.appendChild(yt);
@@ -86,6 +83,47 @@
   document.head.appendChild(core);
 
 })();
+
+
+// ---------- INICIALIZACIÓN ----------
+function initYouTubeVideos() {
+
+  const isMobile = window.innerWidth <= 720;
+  const ytVideos = document.querySelectorAll("video.yt");
+
+  ytVideos.forEach((el, index) => {
+
+    const url = el.textContent.trim();
+    if (!url) return;
+
+    const id = `yt-auto-${index}`;
+    el.textContent = "";
+    el.id = id;
+    el.className = "video-js vjs-default-skin";
+    el.setAttribute("controls", true);
+
+    const setup = {
+      techOrder: ["youtube"],
+      sources: [{
+        type: "video/youtube",
+        src: url
+      }],
+      youtube: {
+        modestbranding: 1,
+        rel: 0
+      },
+      ...(isMobile ? { fluid: true, aspectRatio: "16:9" } : {})
+    };
+
+    el.setAttribute("data-setup", JSON.stringify(setup));
+
+    const player = videojs(id);
+    player.ready(function () {
+      this.el().style.borderRadius = "16px";
+    });
+
+  });
+}
 
 
 document.addEventListener("DOMContentLoaded", function() {
