@@ -17,7 +17,7 @@
         }
     }
 })();
-
+/*
 (function () {
 
   ["videojs-css", "videojs-core", "videojs-youtube"].forEach(id => {
@@ -98,7 +98,7 @@ function initYouTubeVideos() {
     });
   });
 }
-
+*/
 
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -150,9 +150,9 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    /*const ytVideos = document.querySelectorAll("video.yt");*/
+    const ytVideos = document.querySelectorAll("video.yt");*/
 
-    /*ytVideos.forEach((el, index) => {
+    ytVideos.forEach((el, index) => {
         const url = el.textContent.trim();
         const id = `yt-auto-${index}`;
 
@@ -191,7 +191,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 iframe.style.borderRadius = "16px";
             }
         });
-    });*/
+    });
     document.querySelectorAll("iframe.d").forEach(iframe => {
         const id = iframe.textContent.trim();
         iframe.textContent = ""; // limpiar contenido
