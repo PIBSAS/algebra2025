@@ -18,40 +18,8 @@
     }
 })();
 
-/*
-(function() {
-
-    ["videojs-css", "videojs-core", "videojs-youtube"].forEach(id => {
-        const el = document.getElementById(id);
-        if (el) el.remove();
-    });
-
-    // CSS de video.js
-    const css = document.createElement("link");
-    css.id = "videojs-css";
-    css.rel = "stylesheet";
-    css.href = "https://vjs.zencdn.net/8.10.0/video-js.css";
-    document.head.appendChild(css);
-
-    // núcleo video.js
-    const core = document.createElement("script");
-    core.id = "videojs-core";
-    core.src = "https://vjs.zencdn.net/8.10.0/video.min.js";
-    core.defer = true;
-    document.head.appendChild(core);
-
-    // plugin YouTube
-    const yt = document.createElement("script");
-    yt.id = "videojs-youtube";
-    yt.src = "https://cdn.jsdelivr.net/npm/videojs-youtube/dist/Youtube.min.js";
-    yt.defer = true;
-    document.head.appendChild(yt);
-
-})();
-*/
 (function () {
 
-  // ---------- CARGA VIDEO.JS ----------
   ["videojs-css", "videojs-core", "videojs-youtube"].forEach(id => {
     const el = document.getElementById(id);
     if (el) el.remove();
@@ -73,8 +41,7 @@
     yt.src = "https://cdn.jsdelivr.net/npm/videojs-youtube@3/dist/Youtube.min.js";
 
     yt.onload = () => {
-      console.log("Video.js + YouTube cargados");
-      initYouTubeVideos(); // 🔥 único punto donde se usa videojs()
+      initYouTubeVideos(); // 🔥 ACÁ, no antes
     };
 
     document.head.appendChild(yt);
@@ -84,8 +51,6 @@
 
 })();
 
-
-// ---------- INICIALIZACIÓN ----------
 function initYouTubeVideos() {
 
   const isMobile = window.innerWidth <= 720;
@@ -99,8 +64,13 @@ function initYouTubeVideos() {
     const id = `yt-auto-${index}`;
     el.textContent = "";
     el.id = id;
-    el.className = "video-js vjs-default-skin";
+    el.classList.add("video-js", "vjs-default-skin");
     el.setAttribute("controls", true);
+
+    if (!isMobile) {
+      el.setAttribute("width", "640");
+      el.setAttribute("height", "360");
+    }
 
     const setup = {
       techOrder: ["youtube"],
@@ -119,11 +89,16 @@ function initYouTubeVideos() {
 
     const player = videojs(id);
     player.ready(function () {
-      this.el().style.borderRadius = "16px";
-    });
+      const el = this.el();
+      el.style.borderRadius = "16px";
+      el.style.overflow = "hidden";
 
+      const iframe = el.querySelector("iframe");
+      if (iframe) iframe.style.borderRadius = "16px";
+    });
   });
 }
+
 
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -175,9 +150,9 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    const ytVideos = document.querySelectorAll("video.yt");
+    /*const ytVideos = document.querySelectorAll("video.yt");*/
 
-    ytVideos.forEach((el, index) => {
+    /*ytVideos.forEach((el, index) => {
         const url = el.textContent.trim();
         const id = `yt-auto-${index}`;
 
@@ -216,7 +191,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 iframe.style.borderRadius = "16px";
             }
         });
-    });
+    });*/
     document.querySelectorAll("iframe.d").forEach(iframe => {
         const id = iframe.textContent.trim();
         iframe.textContent = ""; // limpiar contenido
