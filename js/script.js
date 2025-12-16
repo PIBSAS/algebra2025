@@ -30,13 +30,13 @@
     const css = document.createElement("link");
     css.id = "videojs-css";
     css.rel = "stylesheet";
-    css.href = "https://vjs.zencdn.net/8.23.4/video-js.css";
+    css.href = "https://vjs.zencdn.net/8.10.0/video-js.css";
     document.head.appendChild(css);
 
     // núcleo video.js
     const core = document.createElement("script");
     core.id = "videojs-core";
-    core.src = "https://vjs.zencdn.net/8.23.4/video.min.js";
+    core.src = "https://vjs.zencdn.net/8.10.0/video.min.js";
     core.defer = true;
     document.head.appendChild(core);
 
